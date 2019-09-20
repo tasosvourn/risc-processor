@@ -321,7 +321,7 @@ architecture RTL of imem is&#13;
 		variable temporal  : std_logic_vector(31 downto 0);&#13;
 		variable rom       : memoryArray := (others =&gt; (others =&gt; '0'));&#13;
 	begin&#13;
-		file_open(inputText, "C:/Users/Tasos/Desktop/diplomatiki/instr_memfile.dat", read_mode);&#13;
+		file_open(inputText, "C:/Users/Tasos/Desktop/diplomatiki/test1.dat", read_mode);&#13;
 		for index in 0 to 127 loop&#13;
 			if (endfile(inputText)) then&#13;
 				exit;&#13;
@@ -375,13 +375,13 @@ end RTL;&#13;
       <rect fill="none" height="200" stroke="#000000" stroke-width="2" width="140" x="60" y="50"/>
       <text fill="#ffffff" font-family="Dialog" font-size="14" font-weight="bold" text-anchor="middle" x="130" y="243">IFIDpipe</text>
       <text font-family="SansSerif" font-size="12" text-anchor="middle" x="71" y="65">clk</text>
-      <circ-port height="10" pin="420,140" width="10" x="205" y="65"/>
       <text font-family="SansSerif" font-size="12" text-anchor="middle" x="72" y="102">pcf</text>
-      <circ-port height="8" pin="210,230" width="8" x="46" y="116"/>
       <circ-port height="8" pin="250,60" width="8" x="46" y="56"/>
-      <circ-port height="8" pin="180,300" width="8" x="46" y="136"/>
-      <circ-port height="10" pin="410,270" width="10" x="205" y="85"/>
       <circ-port height="8" pin="180,330" width="8" x="46" y="76"/>
+      <circ-port height="8" pin="180,300" width="8" x="46" y="136"/>
+      <circ-port height="10" pin="420,140" width="10" x="205" y="65"/>
+      <circ-port height="8" pin="210,230" width="8" x="46" y="116"/>
+      <circ-port height="10" pin="410,270" width="10" x="205" y="85"/>
       <text font-family="SansSerif" font-size="12" text-anchor="middle" x="82" y="125">if_instr</text>
       <text font-family="SansSerif" font-size="12" text-anchor="middle" x="75" y="142">stall</text>
       <text font-family="SansSerif" font-size="12" text-anchor="middle" x="78" y="83">reset</text>
@@ -516,37 +516,36 @@ end RTL;&#13;
       <rect fill="none" height="380" stroke="#000000" stroke-width="2" width="171" x="60" y="50"/>
       <text fill="#ffffff" font-family="Dialog" font-size="14" font-weight="bold" text-anchor="middle" x="144" y="423">IDstage</text>
       <text font-family="SansSerif" font-size="12" text-anchor="middle" x="72" y="62">clk</text>
-      <circ-port height="10" pin="1380,940" width="10" x="235" y="275"/>
-      <circ-port height="8" pin="1390,1390" width="8" x="46" y="256"/>
-      <circ-port height="8" pin="210,1370" width="8" x="46" y="196"/>
-      <circ-port height="8" pin="200,60" width="8" x="46" y="56"/>
-      <circ-port height="10" pin="1380,670" width="10" x="235" y="155"/>
-      <circ-port height="10" pin="1390,1230" width="10" x="235" y="335"/>
-      <circ-port height="8" pin="210,1330" width="8" x="46" y="176"/>
       <circ-port height="8" pin="210,1220" width="8" x="46" y="116"/>
-      <circ-port height="8" pin="210,360" width="8" x="46" y="76"/>
-      <circ-port height="10" pin="1380,630" width="10" x="235" y="135"/>
-      <circ-port height="8" pin="1380,1100" width="8" x="46" y="296"/>
-      <circ-port height="10" pin="1380,560" width="10" x="235" y="115"/>
-      <circ-port height="8" pin="210,490" width="8" x="46" y="96"/>
-      <circ-port height="10" pin="1380,460" width="10" x="235" y="95"/>
-      <circ-port height="8" pin="1390,1460" width="8" x="46" y="276"/>
-      <circ-port height="10" pin="1380,990" width="10" x="235" y="295"/>
-      <circ-port height="10" pin="1380,800" width="10" x="235" y="215"/>
-      <circ-port height="10" pin="1380,890" width="10" x="235" y="255"/>
-      <circ-port height="8" pin="1390,1350" width="8" x="46" y="236"/>
-      <circ-port height="8" pin="210,1410" width="8" x="46" y="216"/>
+      <circ-port height="10" pin="210,130" width="10" x="235" y="55"/>
       <circ-port height="10" pin="1390,1290" width="10" x="235" y="375"/>
+      <circ-port height="10" pin="1380,670" width="10" x="235" y="155"/>
+      <circ-port height="8" pin="1380,1100" width="8" x="46" y="296"/>
+      <circ-port height="10" pin="1380,720" width="10" x="235" y="175"/>
+      <circ-port height="10" pin="1380,890" width="10" x="235" y="255"/>
+      <text font-family="SansSerif" font-size="12" text-anchor="middle" x="81" y="83">pcSeq</text>
+      <circ-port height="10" pin="1390,1230" width="10" x="235" y="335"/>
       <circ-port height="10" pin="1380,760" width="10" x="235" y="195"/>
       <circ-port height="10" pin="1390,1260" width="10" x="235" y="355"/>
-      <circ-port height="10" pin="210,130" width="10" x="235" y="55"/>
+      <circ-port height="8" pin="210,1330" width="8" x="46" y="176"/>
+      <circ-port height="8" pin="210,360" width="8" x="46" y="76"/>
       <circ-port height="8" pin="210,1290" width="8" x="46" y="156"/>
-      <circ-port height="10" pin="1380,840" width="10" x="235" y="235"/>
-      <circ-port height="10" pin="1380,720" width="10" x="235" y="175"/>
+      <circ-port height="8" pin="210,1410" width="8" x="46" y="216"/>
+      <circ-port height="8" pin="200,60" width="8" x="46" y="56"/>
+      <circ-port height="10" pin="1380,560" width="10" x="235" y="115"/>
       <circ-port height="10" pin="1380,1040" width="10" x="235" y="315"/>
-      <circ-port height="10" pin="1380,360" width="10" x="235" y="75"/>
+      <circ-port height="10" pin="1380,800" width="10" x="235" y="215"/>
+      <circ-port height="10" pin="1380,940" width="10" x="235" y="275"/>
+      <circ-port height="8" pin="1390,1460" width="8" x="46" y="276"/>
       <circ-port height="8" pin="210,1250" width="8" x="46" y="136"/>
-      <text font-family="SansSerif" font-size="12" text-anchor="middle" x="81" y="83">pcSeq</text>
+      <circ-port height="10" pin="1380,460" width="10" x="235" y="95"/>
+      <circ-port height="10" pin="1380,630" width="10" x="235" y="135"/>
+      <circ-port height="10" pin="1380,840" width="10" x="235" y="235"/>
+      <circ-port height="8" pin="1390,1350" width="8" x="46" y="236"/>
+      <circ-port height="8" pin="210,1370" width="8" x="46" y="196"/>
+      <circ-port height="8" pin="210,490" width="8" x="46" y="96"/>
+      <circ-port height="10" pin="1380,360" width="10" x="235" y="75"/>
+      <circ-port height="10" pin="1380,990" width="10" x="235" y="295"/>
       <text font-family="SansSerif" font-size="12" text-anchor="middle" x="83" y="104">id_instr</text>
       <text font-family="SansSerif" font-size="12" text-anchor="middle" x="78" y="124">ex_rd</text>
       <text font-family="SansSerif" font-size="12" text-anchor="middle" x="96" y="144">ex_regWrite</text>
@@ -575,6 +574,7 @@ end RTL;&#13;
       <text font-family="SansSerif" font-size="12" text-anchor="middle" x="213" y="343">flush</text>
       <text font-family="SansSerif" font-size="12" text-anchor="middle" x="196" y="363">flowChange</text>
       <text font-family="SansSerif" font-size="12" text-anchor="middle" x="216" y="383">stall</text>
+      <circ-port height="8" pin="1390,1390" width="8" x="46" y="256"/>
       <circ-anchor facing="east" height="6" width="6" x="237" y="57"/>
     </appear>
     <wire from="(910,1120)" to="(1090,1120)"/>
@@ -587,10 +587,9 @@ end RTL;&#13;
     <wire from="(1320,290)" to="(1360,290)"/>
     <wire from="(1030,130)" to="(1030,260)"/>
     <wire from="(210,1250)" to="(640,1250)"/>
-    <wire from="(820,1180)" to="(1110,1180)"/>
     <wire from="(870,750)" to="(870,1030)"/>
-    <wire from="(970,1270)" to="(1140,1270)"/>
     <wire from="(720,1270)" to="(830,1270)"/>
+    <wire from="(970,1270)" to="(1140,1270)"/>
     <wire from="(580,490)" to="(690,490)"/>
     <wire from="(1330,450)" to="(1330,460)"/>
     <wire from="(970,1250)" to="(1210,1250)"/>
@@ -662,9 +661,9 @@ end RTL;&#13;
     <wire from="(1320,290)" to="(1320,660)"/>
     <wire from="(460,670)" to="(480,670)"/>
     <wire from="(970,1290)" to="(1190,1290)"/>
-    <wire from="(740,1250)" to="(830,1250)"/>
     <wire from="(710,730)" to="(710,1280)"/>
     <wire from="(1110,160)" to="(1370,160)"/>
+    <wire from="(740,1250)" to="(830,1250)"/>
     <wire from="(750,1120)" to="(750,1220)"/>
     <wire from="(620,730)" to="(710,730)"/>
     <wire from="(1250,250)" to="(1280,250)"/>
@@ -713,6 +712,7 @@ end RTL;&#13;
     <wire from="(370,280)" to="(370,360)"/>
     <wire from="(1130,720)" to="(1380,720)"/>
     <wire from="(400,520)" to="(400,550)"/>
+    <wire from="(820,1160)" to="(820,1310)"/>
     <wire from="(1080,1460)" to="(1390,1460)"/>
     <wire from="(360,270)" to="(360,360)"/>
     <wire from="(1390,230)" to="(1390,240)"/>
@@ -720,7 +720,6 @@ end RTL;&#13;
     <wire from="(1190,230)" to="(1200,230)"/>
     <wire from="(620,780)" to="(960,780)"/>
     <wire from="(340,250)" to="(340,360)"/>
-    <wire from="(1110,160)" to="(1110,1180)"/>
     <wire from="(740,700)" to="(740,1250)"/>
     <wire from="(920,1110)" to="(1080,1110)"/>
     <wire from="(1250,270)" to="(1280,270)"/>
@@ -728,6 +727,7 @@ end RTL;&#13;
     <wire from="(1320,260)" to="(1350,260)"/>
     <wire from="(920,440)" to="(930,440)"/>
     <wire from="(1300,1050)" to="(1320,1050)"/>
+    <wire from="(1110,160)" to="(1110,1160)"/>
     <wire from="(620,680)" to="(700,680)"/>
     <wire from="(1210,1250)" to="(1210,1290)"/>
     <wire from="(420,420)" to="(480,420)"/>
@@ -764,11 +764,11 @@ end RTL;&#13;
     <wire from="(830,320)" to="(890,320)"/>
     <wire from="(970,1300)" to="(1220,1300)"/>
     <wire from="(210,1220)" to="(650,1220)"/>
-    <wire from="(820,1180)" to="(820,1310)"/>
     <wire from="(620,770)" to="(660,770)"/>
     <wire from="(870,450)" to="(870,480)"/>
     <wire from="(640,330)" to="(640,420)"/>
     <wire from="(960,630)" to="(1380,630)"/>
+    <wire from="(820,1160)" to="(1110,1160)"/>
     <wire from="(840,190)" to="(880,190)"/>
     <wire from="(580,240)" to="(580,270)"/>
     <wire from="(550,210)" to="(550,240)"/>
@@ -794,8 +794,8 @@ end RTL;&#13;
     <wire from="(1280,1050)" to="(1300,1050)"/>
     <wire from="(1090,440)" to="(1330,440)"/>
     <wire from="(780,330)" to="(780,340)"/>
-    <wire from="(710,1280)" to="(830,1280)"/>
     <wire from="(480,420)" to="(540,420)"/>
+    <wire from="(710,1280)" to="(830,1280)"/>
     <wire from="(680,550)" to="(730,550)"/>
     <wire from="(1090,1390)" to="(1390,1390)"/>
     <wire from="(480,190)" to="(480,200)"/>
@@ -1172,11 +1172,6 @@ end RTL;&#13;
       <a name="label" val="flowChange"/>
       <a name="labelloc" val="east"/>
     </comp>
-    <comp lib="0" loc="(1390,1390)" name="Pin">
-      <a name="facing" val="west"/>
-      <a name="width" val="5"/>
-      <a name="label" val="wb_ed"/>
-    </comp>
     <comp lib="0" loc="(580,490)" name="Bit Extender">
       <a name="in_width" val="16"/>
       <a name="out_width" val="32"/>
@@ -1229,147 +1224,6 @@ end RTL;&#13;
       <a name="bit29" val="0"/>
       <a name="bit30" val="0"/>
       <a name="bit31" val="0"/>
-    </comp>
-    <comp lib="6" loc="(830,1190)" name="VHDL Entity">
-      <a name="content">library ieee;&#13;
-use ieee.std_logic_1164.all;&#13;
-use ieee.numeric_std.all;&#13;
-&#13;
-entity pipe_ctrl is&#13;
-	port(&#13;
-		rs            : in  std_logic_vector(4 downto 0);&#13;
-		rt            : in  std_logic_vector(4 downto 0);&#13;
-		isStore       : in  std_logic;&#13;
-		isNop         : in  std_logic;&#13;
-		readsRs       : in  std_logic;&#13;
-		readsRt       : in  std_logic;&#13;
-		branch        : in  std_logic;&#13;
-		jump          : in  std_logic;&#13;
-		brTaken       : in  std_logic;&#13;
-		-- From Stage Ex  --&#13;
-		ex_rd         : in  std_logic_vector(4 downto 0);&#13;
-		ex_regWrite   : in  std_logic;&#13;
-		ex_isLoad     : in  std_logic;&#13;
-		-- From Stage Mem --&#13;
-		mem_rd        : in  std_logic_vector(4 downto 0);&#13;
-		mem_regWrite  : in  std_logic;&#13;
-		mem_isLoad    : in  std_logic;&#13;
-		--  For Stage IF  --&#13;
-		flush         : out std_logic;&#13;
-		flowChange    : out std_logic;&#13;
-		stall         : out std_logic;&#13;
-		--  For Stage ID  --&#13;
-		id_forwardA   : out std_logic_vector(1 downto 0) := "00"; -- Select Register from Register File.&#13;
-		id_forwardB   : out std_logic_vector(1 downto 0) := "00"; -- Select Register from Register File.&#13;
-		id_eqFwdA     : out std_logic := '0';&#13;
-		id_eqFwdB     : out std_logic := '0';&#13;
-		id_ldstBypass : out std_logic := '0'&#13;
-	);&#13;
-end  pipe_ctrl;&#13;
-&#13;
-architecture RTL of pipe_ctrl is&#13;
-	signal ofStall : std_logic;&#13;
-	constant empty : std_logic_vector(4 downto 0) := (others =&gt; '0');&#13;
-begin&#13;
-	stall         &lt;= ofStall;&#13;
-	flush         &lt;= (branch and brTaken and not ofStall) or jump;&#13;
-	flowChange    &lt;= (branch and brTaken and not ofStall) or jump;&#13;
-	-- Forwarding Control for Operand A (rs):&#13;
-	-- 00 -- From Register File.&#13;
-	-- 01 -- From Stage Mem to Stage Ex.&#13;
-	-- 10 -- From Stage Wb to Stage Ex.&#13;
-	id_forwardA &lt;= "10" when ((ex_regWrite = '1')	-- Valid Instruction producing Result at Stage Ex.&#13;
-						  and (ex_rd = rs)			-- Ex Target is our Rs source.&#13;
-						  and (readsRs = '1')		-- This is not a Jump Instruction, Rs is read from.&#13;
-						  and (rs /= empty)) else	-- Not reading $zero.&#13;
-				   "01" when ((mem_regWrite = '1')	-- Valid Instruction producing Result at Stage Mem.&#13;
-				   	      and (mem_rd = rs)			-- Mem Target is our Rs source.&#13;
-				   	      and (readsRs = '1')		-- This is not a Jump Instruction, Rs is read from.&#13;
-				   	      and (rs /= empty)) else	-- Not reading $zero.&#13;
-				   "00";&#13;
-	-- Forwarding Control for Operand B (rt):&#13;
-	-- It is only needed for R-type Instructions and Sw.&#13;
-	-- However, since the immediate mux is after the bypass mux,&#13;
-	-- it is unimportant when Rt is not a source. (e.g. addi, lw) &#13;
-	id_forwardB &lt;= "10" when ((ex_regWrite = '1')	-- Valid Instruction producing Result at Stage Ex.&#13;
-		                  and (ex_rd = rt)			-- Ex target is our Rt source.&#13;
-		                  and (readsRt = '1')		-- This is not a Lui Instruction, Rt is read from.&#13;
-		                  and (rt /= empty)) else	-- Not reading $zero.&#13;
-				   "01" when ((mem_regWrite = '1')	-- Valid Instruction producing Result at Stage Mem.&#13;
-				   	      and (mem_rd = rt)			-- Mem Target is our Rt source.&#13;
-				   	      and (readsRt = '1')		-- This is not a Lui Instruction, Rt is read from.&#13;
-				   	      and (rt /= empty)) else	-- Not reading $zero.&#13;
-				   "00";&#13;
-	-- Forwarding Logic to Equality Comparator of Stage ID (Input A)&#13;
-	id_eqFwdA &lt;= '1' when ((rs = mem_rd)              -- Mem Target is our Rs source.&#13;
-		               and (rs /= empty)              -- Not reading $zero.&#13;
-		               and (mem_isLoad = '0')         -- Not a Load, can't bypass with stall.&#13;
-		               and (mem_regWrite = '1')) else -- Valid Instruction producing Result at Stage Mem.&#13;
-		         '0';&#13;
-	-- Forwarding Logic to Equality Comparator of Stage ID (Input B)&#13;
-	id_eqFwdB &lt;= '1' when ((rt = mem_rd)              -- Mem Target is our Rt source.&#13;
-		               and (rt /= empty)              -- Not reading $zero.&#13;
-		               and (mem_isLoad = '0')         -- Not a Load, can't bypass with stall.&#13;
-		               and (mem_regWrite = '1')) else -- Valid Instruction producing Result at Stage Mem.&#13;
-		         '0';&#13;
-	-- Forward just Loaded a value to a subsequent Store.&#13;
-	-- lw $t0, 0($s0)  # Load from s0 to t0.&#13;
-	-- sw $t0, 0($s1)  # Store from t0 to s1.&#13;
-	id_ldstBypass &lt;= '1' when ((isStore = '1')     -- Store Word at Stage Id.&#13;
-		                   and (ex_isLoad = '1')   -- Load Word at Stage Ex.&#13;
-		                   and (ex_regWrite = '1') -- Valid Instruction producing Result at Stage Ex.&#13;
-		                   and (rt = ex_rd)        -- Store Word Register is the same one as the previous Load Word Register.&#13;
-		                   and (rt /= empty)) else -- Not reading $zero.&#13;
-		             '0';&#13;
-	stalling : process(rs, rt, isStore, isNop, readsRs, branch, ex_rd, ex_regWrite, ex_isLoad, mem_rd, mem_regWrite, mem_isLoad)&#13;
-	begin&#13;
-		ofStall &lt;= '0'; -- Normally, no stalling happens.&#13;
-		-- -- Conservative Stalling. NO BYPASSING, except internally in register file.&#13;
-		-- Stalls for Data Dependence on Rs:&#13;
---		if ((ex_regWrite = '1' and rs = ex_rd) or (mem_regWrite = '1' and rs = mem_rd)) and rs /= empty and readsRs = '1' and isNop = '0' then&#13;
-			-- Valid Instruction at Stage Ex and Reading the same Register, or&#13;
-			-- Valid Instruction at Stage Mem and Reading the same Register,&#13;
-			-- and the Register is not $zero, the Rs is actually read, and the Instruction is not Nop.&#13;
---			ofStall &lt;= '1';&#13;
---		end if;&#13;
-		-- Stalls for Data Dependence on Rt:&#13;
---		if ((ex_regWrite = '1' and rt = ex_rd) or (mem_regWrite = '1' and rt = mem_rd)) and rt /= empty and readsRt = '1' and isNop = '0' then&#13;
-			-- Valid Instruction at Stage Ex and Reading the same Register, or&#13;
-			-- Valid Instruction at Stage Mem and Reading the same Register,&#13;
-			-- and the Register is not $zero, the Rt is actually read, and the Instruction is not Nop.&#13;
---			ofStall &lt;= '1';&#13;
---		end if;&#13;
-		-- Checking for Stalls from a Branch at Stage Id is for naught, as it is covered already.&#13;
-		-- If there is a dependence on an Instruction on Stage Wb, the value is forwarded&#13;
-		-- automatically inside the Register File, by writting itself on the same place.&#13;
-		-- -- Normal Stalling with Bypassing.&#13;
-		if branch = '1' and isNop = '0' then -- Branch Sources not ready. Beq too close to producer Rs or Rt.&#13;
-			if rs /= empty then -- Not reading $zero.&#13;
-				if rs = ex_rd and ex_regWrite = '1' then -- Rs comes from a previous Instruction.&#13;
-					ofStall &lt;= '1';&#13;
-				elsif rs = mem_rd and mem_isLoad = '1' and mem_regWrite = '1' then 	-- Rs comes from two Instructions ago, which was a Load.&#13;
-					ofStall &lt;= '1';													-- Instruction -3 is at Stage Wb, so it bypassed the new value through the Register File.&#13;
-				end if;&#13;
-			end if;&#13;
-			if rt /= empty then -- Not reading $zero.&#13;
-				if rt = ex_rd and ex_regWrite = '1' then -- Rt comes from a previous Instruction.&#13;
-					ofStall &lt;= '1';&#13;
-				elsif rt = mem_rd and mem_isLoad = '1' and mem_regWrite = '1' then 	-- Rt comes from two Instructions ago, which was a Load.&#13;
-					ofStall &lt;= '1';													-- Instruction -3 is at Stage Wb, so it bypassed the new value through the Register File.&#13;
-				end if;&#13;
-			end if;&#13;
-		-- Load-use Stall:&#13;
-	elsif ex_isLoad = '1' and ex_regWrite = '1' and rs = ex_rd and rs /= empty and readsRs = '1' and isNop = '0' then&#13;
-			-- Valid Load at Stage Ex, of the same Register, Rs not $zero, Rs is actually used, and it is not a Nop.&#13;
-			ofStall &lt;= '1';&#13;
-		elsif ex_isLoad = '1' and ex_regWrite = '1' and rt = ex_rd and rt /= empty and readsRs = '1' and isNop = '0' and isStore = '0' then&#13;
-			-- Valid Load at Stage Ex, of the same Register, Rt not $zero, Rt is actually used, and it is not a Nop. Also, it is not a Store, which bypasses Rt.&#13;
-			ofStall &lt;= '1';&#13;
-		end if;&#13;
-	end process stalling;&#13;
-end RTL;&#13;
-</a>
-      <a name="label" val="pipelineControl"/>
     </comp>
     <comp lib="1" loc="(1370,180)" name="AND Gate">
       <a name="facing" val="north"/>
@@ -1855,6 +1709,152 @@ end RTL;&#13;
       <a name="label" val="id_regWrite"/>
       <a name="labelloc" val="east"/>
     </comp>
+    <comp lib="6" loc="(830,1190)" name="VHDL Entity">
+      <a name="content">library ieee;&#13;
+use ieee.std_logic_1164.all;&#13;
+use ieee.numeric_std.all;&#13;
+&#13;
+entity pipe_ctrl is&#13;
+	port(&#13;
+		rs            : in  std_logic_vector(4 downto 0);&#13;
+		rt            : in  std_logic_vector(4 downto 0);&#13;
+		isStore       : in  std_logic;&#13;
+		isNop         : in  std_logic;&#13;
+		readsRs       : in  std_logic;&#13;
+		readsRt       : in  std_logic;&#13;
+		branch        : in  std_logic;&#13;
+		jump          : in  std_logic;&#13;
+		brTaken       : in  std_logic;&#13;
+		-- From Stage Ex  --&#13;
+		ex_rd         : in  std_logic_vector(4 downto 0);&#13;
+		ex_regWrite   : in  std_logic;&#13;
+		ex_isLoad     : in  std_logic;&#13;
+		-- From Stage Mem --&#13;
+		mem_rd        : in  std_logic_vector(4 downto 0);&#13;
+		mem_regWrite  : in  std_logic;&#13;
+		mem_isLoad    : in  std_logic;&#13;
+		--  For Stage IF  --&#13;
+		flush         : out std_logic;&#13;
+		flowChange    : out std_logic;&#13;
+		stall         : out std_logic;&#13;
+		--  For Stage ID  --&#13;
+		id_forwardA   : out std_logic_vector(1 downto 0) := "00"; -- Select Register from Register File.&#13;
+		id_forwardB   : out std_logic_vector(1 downto 0) := "00"; -- Select Register from Register File.&#13;
+		id_eqFwdA     : out std_logic := '0';&#13;
+		id_eqFwdB     : out std_logic := '0';&#13;
+		id_ldstBypass : out std_logic := '0'&#13;
+	);&#13;
+end  pipe_ctrl;&#13;
+&#13;
+architecture RTL of pipe_ctrl is&#13;
+	signal ofStall : std_logic;&#13;
+	constant empty : std_logic_vector(4 downto 0) := (others =&gt; '0');&#13;
+begin&#13;
+	stall         &lt;= ofStall;&#13;
+	flush         &lt;= (branch and brTaken and not ofStall) or jump;&#13;
+	flowChange    &lt;= (branch and brTaken and not ofStall) or jump;&#13;
+	-- Forwarding Control for Operand A (rs):&#13;
+	-- 00 -- From Register File.&#13;
+	-- 01 -- From Stage Mem to Stage Ex.&#13;
+	-- 10 -- From Stage Wb to Stage Ex.&#13;
+	id_forwardA &lt;= "10" when ((ex_regWrite = '1')	-- Valid Instruction producing Result at Stage Ex.&#13;
+						  and (ex_rd = rs)			-- Ex Target is our Rs source.&#13;
+						  and (readsRs = '1')		-- This is not a Jump Instruction, Rs is read from.&#13;
+						  and (rs /= empty)) else	-- Not reading $zero.&#13;
+				   "01" when ((mem_regWrite = '1')	-- Valid Instruction producing Result at Stage Mem.&#13;
+				   	      and (mem_rd = rs)			-- Mem Target is our Rs source.&#13;
+				   	      and (readsRs = '1')		-- This is not a Jump Instruction, Rs is read from.&#13;
+				   	      and (rs /= empty)) else	-- Not reading $zero.&#13;
+				   "00";&#13;
+	-- Forwarding Control for Operand B (rt):&#13;
+	-- It is only needed for R-type Instructions and Sw.&#13;
+	-- However, since the immediate mux is after the bypass mux,&#13;
+	-- it is unimportant when Rt is not a source. (e.g. addi, lw) &#13;
+	id_forwardB &lt;= "10" when ((ex_regWrite = '1')	-- Valid Instruction producing Result at Stage Ex.&#13;
+		                  and (ex_rd = rt)			-- Ex target is our Rt source.&#13;
+		                  and (readsRt = '1')		-- This is not a Lui Instruction, Rt is read from.&#13;
+		                  and (rt /= empty)) else	-- Not reading $zero.&#13;
+				   "01" when ((mem_regWrite = '1')	-- Valid Instruction producing Result at Stage Mem.&#13;
+				   	      and (mem_rd = rt)			-- Mem Target is our Rt source.&#13;
+				   	      and (readsRt = '1')		-- This is not a Lui Instruction, Rt is read from.&#13;
+				   	      and (rt /= empty)) else	-- Not reading $zero.&#13;
+				   "00";&#13;
+	-- Forwarding Logic to Equality Comparator of Stage ID (Input A)&#13;
+	id_eqFwdA &lt;= '1' when ((rs = mem_rd)              -- Mem Target is our Rs source.&#13;
+		               and (rs /= empty)              -- Not reading $zero.&#13;
+		               and (mem_isLoad = '0')         -- Not a Load, can't bypass with stall.&#13;
+		               and (mem_regWrite = '1')) else -- Valid Instruction producing Result at Stage Mem.&#13;
+		         '0';&#13;
+	-- Forwarding Logic to Equality Comparator of Stage ID (Input B)&#13;
+	id_eqFwdB &lt;= '1' when ((rt = mem_rd)              -- Mem Target is our Rt source.&#13;
+		               and (rt /= empty)              -- Not reading $zero.&#13;
+		               and (mem_isLoad = '0')         -- Not a Load, can't bypass with stall.&#13;
+		               and (mem_regWrite = '1')) else -- Valid Instruction producing Result at Stage Mem.&#13;
+		         '0';&#13;
+	-- Forward just Loaded a value to a subsequent Store.&#13;
+	-- lw $t0, 0($s0)  # Load from s0 to t0.&#13;
+	-- sw $t0, 0($s1)  # Store from t0 to s1.&#13;
+	id_ldstBypass &lt;= '1' when ((isStore = '1')     -- Store Word at Stage Id.&#13;
+		                   and (ex_isLoad = '1')   -- Load Word at Stage Ex.&#13;
+		                   and (ex_regWrite = '1') -- Valid Instruction producing Result at Stage Ex.&#13;
+		                   and (rt = ex_rd)        -- Store Word Register is the same one as the previous Load Word Register.&#13;
+		                   and (rt /= empty)) else -- Not reading $zero.&#13;
+		             '0';&#13;
+	stalling : process(rs, rt, isStore, isNop, readsRs, branch, ex_rd, ex_regWrite, ex_isLoad, mem_rd, mem_regWrite, mem_isLoad)&#13;
+	begin&#13;
+		ofStall &lt;= '0'; -- Normally, no stalling happens.&#13;
+		-- -- Conservative Stalling. NO BYPASSING, except internally in register file.&#13;
+		-- Stalls for Data Dependence on Rs:&#13;
+--		if ((ex_regWrite = '1' and rs = ex_rd) or (mem_regWrite = '1' and rs = mem_rd)) and rs /= empty and readsRs = '1' and isNop = '0' then&#13;
+			-- Valid Instruction at Stage Ex and Reading the same Register, or&#13;
+			-- Valid Instruction at Stage Mem and Reading the same Register,&#13;
+			-- and the Register is not $zero, the Rs is actually read, and the Instruction is not Nop.&#13;
+--			ofStall &lt;= '1';&#13;
+--		end if;&#13;
+		-- Stalls for Data Dependence on Rt:&#13;
+--		if ((ex_regWrite = '1' and rt = ex_rd) or (mem_regWrite = '1' and rt = mem_rd)) and rt /= empty and readsRt = '1' and isNop = '0' then&#13;
+			-- Valid Instruction at Stage Ex and Reading the same Register, or&#13;
+			-- Valid Instruction at Stage Mem and Reading the same Register,&#13;
+			-- and the Register is not $zero, the Rt is actually read, and the Instruction is not Nop.&#13;
+--			ofStall &lt;= '1';&#13;
+--		end if;&#13;
+		-- Checking for Stalls from a Branch at Stage Id is for naught, as it is covered already.&#13;
+		-- If there is a dependence on an Instruction on Stage Wb, the value is forwarded&#13;
+		-- automatically inside the Register File, by writting itself on the same place.&#13;
+		-- -- Normal Stalling with Bypassing.&#13;
+		if branch = '1' and isNop = '0' then -- Branch Sources not ready. Beq too close to producer Rs or Rt.&#13;
+			if rs /= empty then -- Not reading $zero.&#13;
+				if rs = ex_rd and ex_regWrite = '1' then -- Rs comes from a previous Instruction.&#13;
+					ofStall &lt;= '1';&#13;
+				elsif rs = mem_rd and mem_isLoad = '1' and mem_regWrite = '1' then 	-- Rs comes from two Instructions ago, which was a Load.&#13;
+					ofStall &lt;= '1';													-- Instruction -3 is at Stage Wb, so it bypassed the new value through the Register File.&#13;
+				end if;&#13;
+			end if;&#13;
+			if rt /= empty then -- Not reading $zero.&#13;
+				if rt = ex_rd and ex_regWrite = '1' then -- Rt comes from a previous Instruction.&#13;
+					ofStall &lt;= '1';&#13;
+				elsif rt = mem_rd and mem_isLoad = '1' and mem_regWrite = '1' then 	-- Rt comes from two Instructions ago, which was a Load.&#13;
+					ofStall &lt;= '1';													-- Instruction -3 is at Stage Wb, so it bypassed the new value through the Register File.&#13;
+				end if;&#13;
+			end if;&#13;
+		-- Load-use Stall:&#13;
+	elsif ex_isLoad = '1' and ex_regWrite = '1' and rs = ex_rd and rs /= empty and readsRs = '1' and isNop = '0' then&#13;
+			-- Valid Load at Stage Ex, of the same Register, Rs not $zero, Rs is actually used, and it is not a Nop.&#13;
+			ofStall &lt;= '1';&#13;
+		elsif ex_isLoad = '1' and ex_regWrite = '1' and rt = ex_rd and rt /= empty and readsRs = '1' and isNop = '0' and isStore = '0' then&#13;
+			-- Valid Load at Stage Ex, of the same Register, Rt not $zero, Rt is actually used, and it is not a Nop. Also, it is not a Store, which bypasses Rt.&#13;
+			ofStall &lt;= '1';&#13;
+		end if;&#13;
+	end process stalling;&#13;
+end RTL;&#13;
+</a>
+      <a name="label" val="pipelineControl"/>
+    </comp>
+    <comp lib="0" loc="(1390,1390)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="width" val="5"/>
+      <a name="label" val="wb_rd"/>
+    </comp>
   </circuit>
   <circuit name="IDEXpipe">
     <a name="circuit" val="IDEXpipe"/>
@@ -1950,34 +1950,34 @@ end RTL;&#13;
       <text font-family="SansSerif" font-size="12" text-anchor="middle" x="73" y="63">clk</text>
       <rect height="3" stroke="none" width="10" x="50" y="79"/>
       <text font-family="SansSerif" font-size="12" text-anchor="middle" x="77" y="83">reset</text>
-      <circ-port height="10" pin="300,1310" width="10" x="245" y="275"/>
-      <circ-port height="8" pin="130,1430" width="8" x="46" y="316"/>
-      <circ-port height="10" pin="300,230" width="10" x="245" y="95"/>
-      <circ-port height="10" pin="300,1430" width="10" x="245" y="295"/>
-      <circ-port height="10" pin="300,590" width="10" x="245" y="155"/>
-      <circ-port height="10" pin="300,1070" width="10" x="245" y="235"/>
-      <circ-port height="10" pin="300,110" width="10" x="245" y="75"/>
-      <circ-port height="10" pin="300,1550" width="10" x="245" y="315"/>
-      <circ-port height="8" pin="130,1310" width="8" x="46" y="296"/>
-      <circ-port height="10" pin="300,950" width="10" x="245" y="215"/>
-      <circ-port height="8" pin="130,830" width="8" x="46" y="216"/>
-      <circ-port height="10" pin="300,350" width="10" x="245" y="115"/>
-      <circ-port height="8" pin="130,230" width="8" x="46" y="116"/>
-      <circ-port height="8" pin="130,950" width="8" x="46" y="236"/>
-      <circ-port height="10" pin="300,830" width="10" x="245" y="195"/>
       <circ-port height="8" pin="130,350" width="8" x="46" y="136"/>
-      <circ-port height="8" pin="130,1550" width="8" x="46" y="336"/>
-      <circ-port height="8" pin="150,30" width="8" x="46" y="56"/>
-      <circ-port height="8" pin="130,1190" width="8" x="46" y="276"/>
-      <circ-port height="8" pin="130,1070" width="8" x="46" y="256"/>
-      <circ-port height="8" pin="260,1660" width="8" x="46" y="76"/>
-      <circ-port height="8" pin="130,590" width="8" x="46" y="176"/>
-      <circ-port height="10" pin="300,470" width="10" x="245" y="135"/>
-      <circ-port height="8" pin="130,110" width="8" x="46" y="96"/>
       <circ-port height="8" pin="130,710" width="8" x="46" y="196"/>
-      <circ-port height="10" pin="300,1190" width="10" x="245" y="255"/>
+      <circ-port height="8" pin="130,1310" width="8" x="46" y="296"/>
+      <circ-port height="10" pin="300,110" width="10" x="245" y="75"/>
+      <circ-port height="10" pin="300,470" width="10" x="245" y="135"/>
+      <circ-port height="8" pin="150,50" width="8" x="46" y="56"/>
+      <circ-port height="8" pin="130,1430" width="8" x="46" y="316"/>
+      <circ-port height="8" pin="130,950" width="8" x="46" y="236"/>
       <circ-port height="8" pin="130,470" width="8" x="46" y="156"/>
+      <circ-port height="8" pin="130,830" width="8" x="46" y="216"/>
+      <circ-port height="10" pin="300,590" width="10" x="245" y="155"/>
+      <circ-port height="8" pin="260,1640" width="8" x="46" y="76"/>
+      <circ-port height="8" pin="130,1070" width="8" x="46" y="256"/>
+      <circ-port height="10" pin="300,1430" width="10" x="245" y="295"/>
+      <circ-port height="10" pin="300,350" width="10" x="245" y="115"/>
       <circ-port height="10" pin="300,710" width="10" x="245" y="175"/>
+      <circ-port height="8" pin="130,230" width="8" x="46" y="116"/>
+      <circ-port height="10" pin="300,230" width="10" x="245" y="95"/>
+      <circ-port height="8" pin="130,1190" width="8" x="46" y="276"/>
+      <circ-port height="8" pin="130,590" width="8" x="46" y="176"/>
+      <circ-port height="10" pin="300,1070" width="10" x="245" y="235"/>
+      <circ-port height="10" pin="300,950" width="10" x="245" y="215"/>
+      <circ-port height="10" pin="300,1190" width="10" x="245" y="255"/>
+      <circ-port height="10" pin="300,830" width="10" x="245" y="195"/>
+      <circ-port height="10" pin="300,1310" width="10" x="245" y="275"/>
+      <circ-port height="8" pin="130,1550" width="8" x="46" y="336"/>
+      <circ-port height="8" pin="130,110" width="8" x="46" y="96"/>
+      <circ-port height="10" pin="300,1550" width="10" x="245" y="315"/>
       <text font-family="SansSerif" font-size="12" text-anchor="middle" x="217" y="303">ex_rd</text>
       <text font-family="SansSerif" font-size="12" text-anchor="middle" x="213" y="104">ex_rdB</text>
       <text fill="#404040" font-family="Dialog" font-size="12" text-anchor="end" x="229" y="304"/>
@@ -2046,6 +2046,8 @@ end RTL;&#13;
     <wire from="(130,1310)" to="(170,1310)"/>
     <wire from="(130,1430)" to="(170,1430)"/>
     <wire from="(130,1550)" to="(170,1550)"/>
+    <wire from="(260,1610)" to="(260,1640)"/>
+    <wire from="(150,50)" to="(150,150)"/>
     <wire from="(260,540)" to="(260,650)"/>
     <wire from="(260,1500)" to="(260,1610)"/>
     <wire from="(150,990)" to="(170,990)"/>
@@ -2061,7 +2063,6 @@ end RTL;&#13;
     <wire from="(150,270)" to="(170,270)"/>
     <wire from="(150,150)" to="(170,150)"/>
     <wire from="(150,1590)" to="(170,1590)"/>
-    <wire from="(260,1610)" to="(260,1660)"/>
     <wire from="(230,110)" to="(300,110)"/>
     <wire from="(230,230)" to="(300,230)"/>
     <wire from="(230,350)" to="(300,350)"/>
@@ -2082,7 +2083,6 @@ end RTL;&#13;
     <wire from="(150,390)" to="(150,510)"/>
     <wire from="(150,270)" to="(150,390)"/>
     <wire from="(150,150)" to="(150,270)"/>
-    <wire from="(150,30)" to="(150,150)"/>
     <wire from="(260,180)" to="(260,300)"/>
     <wire from="(260,300)" to="(260,420)"/>
     <wire from="(260,420)" to="(260,540)"/>
@@ -2195,9 +2195,6 @@ end RTL;&#13;
       <a name="width" val="32"/>
       <a name="labelloc" val="east"/>
     </comp>
-    <comp lib="0" loc="(150,30)" name="Pin">
-      <a name="facing" val="south"/>
-    </comp>
     <comp lib="0" loc="(300,350)" name="Pin">
       <a name="facing" val="west"/>
       <a name="output" val="true"/>
@@ -2258,7 +2255,10 @@ end RTL;&#13;
       <a name="output" val="true"/>
       <a name="labelloc" val="east"/>
     </comp>
-    <comp lib="0" loc="(260,1660)" name="Pin">
+    <comp lib="0" loc="(150,50)" name="Pin">
+      <a name="facing" val="south"/>
+    </comp>
+    <comp lib="0" loc="(260,1640)" name="Pin">
       <a name="facing" val="north"/>
     </comp>
   </circuit>
@@ -2348,28 +2348,28 @@ end RTL;&#13;
       <text font-family="SansSerif" font-size="12" text-anchor="start" x="61" y="263">ex_memtoReg</text>
       <text fill="#404040" font-family="Dialog" font-size="12" text-anchor="start" x="97" y="102"/>
       <circ-port height="8" pin="250,380" width="8" x="46" y="136"/>
-      <circ-port height="8" pin="250,500" width="8" x="46" y="216"/>
-      <circ-port height="10" pin="900,500" width="10" x="255" y="115"/>
-      <circ-port height="10" pin="900,300" width="10" x="255" y="75"/>
-      <circ-port height="10" pin="900,150" width="10" x="255" y="55"/>
-      <circ-port height="8" pin="250,350" width="8" x="46" y="116"/>
-      <circ-port height="8" pin="250,440" width="8" x="46" y="176"/>
-      <circ-port height="8" pin="250,590" width="8" x="46" y="276"/>
-      <circ-port height="10" pin="900,470" width="10" x="255" y="95"/>
-      <circ-port height="10" pin="900,530" width="10" x="255" y="135"/>
-      <circ-port height="8" pin="250,470" width="8" x="46" y="196"/>
-      <circ-port height="8" pin="250,200" width="8" x="46" y="76"/>
-      <circ-port height="10" pin="900,620" width="10" x="255" y="195"/>
-      <circ-port height="10" pin="900,560" width="10" x="255" y="155"/>
-      <circ-port height="8" pin="360,650" width="8" x="46" y="316"/>
-      <circ-port height="8" pin="250,110" width="8" x="46" y="56"/>
       <circ-port height="8" pin="250,530" width="8" x="46" y="236"/>
-      <circ-port height="8" pin="250,410" width="8" x="46" y="156"/>
-      <circ-port height="8" pin="250,620" width="8" x="46" y="296"/>
+      <circ-port height="10" pin="900,560" width="10" x="255" y="155"/>
+      <circ-port height="10" pin="900,300" width="10" x="255" y="75"/>
       <circ-port height="10" pin="900,590" width="10" x="255" y="175"/>
-      <circ-port height="8" pin="450,650" width="8" x="46" y="336"/>
-      <circ-port height="8" pin="250,560" width="8" x="46" y="256"/>
+      <circ-port height="8" pin="250,470" width="8" x="46" y="196"/>
+      <circ-port height="8" pin="250,440" width="8" x="46" y="176"/>
       <circ-port height="8" pin="250,290" width="8" x="46" y="96"/>
+      <circ-port height="8" pin="250,590" width="8" x="46" y="276"/>
+      <circ-port height="10" pin="900,530" width="10" x="255" y="135"/>
+      <circ-port height="8" pin="450,650" width="8" x="46" y="336"/>
+      <circ-port height="10" pin="900,150" width="10" x="255" y="55"/>
+      <circ-port height="10" pin="900,620" width="10" x="255" y="195"/>
+      <circ-port height="8" pin="250,410" width="8" x="46" y="156"/>
+      <circ-port height="8" pin="250,500" width="8" x="46" y="216"/>
+      <circ-port height="8" pin="250,110" width="8" x="46" y="56"/>
+      <circ-port height="8" pin="360,650" width="8" x="46" y="316"/>
+      <circ-port height="10" pin="900,500" width="10" x="255" y="115"/>
+      <circ-port height="8" pin="250,620" width="8" x="46" y="296"/>
+      <circ-port height="8" pin="250,200" width="8" x="46" y="76"/>
+      <circ-port height="8" pin="250,350" width="8" x="46" y="116"/>
+      <circ-port height="8" pin="250,560" width="8" x="46" y="256"/>
+      <circ-port height="10" pin="900,470" width="10" x="255" y="95"/>
       <text fill="#404040" font-family="Dialog" font-size="12" text-anchor="start" x="97" y="182"/>
       <text fill="#404040" font-family="Dialog" font-size="12" text-anchor="start" x="61" y="323"/>
       <text fill="#404040" font-family="Dialog" font-size="12" text-anchor="start" x="97" y="142"/>
@@ -2558,10 +2558,10 @@ end RTL;&#13;
       <a name="label" val="ex_rd"/>
     </comp>
     <comp lib="6" loc="(740,110)" name="VHDL Entity">
-      <a name="content">library ieee;&#13;
-  use ieee.std_logic_1164.all;&#13;
-  use ieee.numeric_std.all;&#13;
-&#13;
+      <a name="content">library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+
 entity alu is
 	port(
 		a       : in  std_logic_vector(31 downto 0);
@@ -2658,24 +2658,24 @@ end RTL;
       <text font-family="SansSerif" font-size="12" text-anchor="middle" x="90" y="104">ex_aluOut</text>
       <text font-family="SansSerif" font-size="12" text-anchor="middle" x="101" y="203">ex_memtoReg</text>
       <text font-family="SansSerif" font-size="12" text-anchor="middle" x="71" y="63">clk</text>
-      <circ-port height="10" pin="350,220" width="10" x="255" y="75"/>
-      <circ-port height="10" pin="350,710" width="10" x="255" y="155"/>
-      <circ-port height="10" pin="350,590" width="10" x="255" y="135"/>
-      <circ-port height="8" pin="130,100" width="8" x="46" y="96"/>
-      <circ-port height="8" pin="130,970" width="8" x="46" y="236"/>
-      <circ-port height="8" pin="130,840" width="8" x="46" y="216"/>
-      <circ-port height="8" pin="130,220" width="8" x="46" y="116"/>
-      <circ-port height="8" pin="130,460" width="8" x="46" y="156"/>
-      <circ-port height="10" pin="350,970" width="10" x="255" y="195"/>
-      <circ-port height="10" pin="360,100" width="10" x="255" y="55"/>
-      <circ-port height="10" pin="350,460" width="10" x="255" y="115"/>
-      <circ-port height="10" pin="350,340" width="10" x="255" y="95"/>
-      <circ-port height="10" pin="350,840" width="10" x="255" y="175"/>
-      <circ-port height="8" pin="130,590" width="8" x="46" y="176"/>
-      <circ-port height="8" pin="160,40" width="8" x="46" y="56"/>
       <circ-port height="8" pin="290,1050" width="8" x="46" y="76"/>
+      <circ-port height="8" pin="130,970" width="8" x="46" y="236"/>
+      <circ-port height="10" pin="350,460" width="10" x="255" y="115"/>
+      <circ-port height="10" pin="360,100" width="10" x="255" y="55"/>
+      <circ-port height="8" pin="130,840" width="8" x="46" y="216"/>
+      <circ-port height="8" pin="160,40" width="8" x="46" y="56"/>
+      <circ-port height="10" pin="350,220" width="10" x="255" y="75"/>
       <circ-port height="8" pin="130,710" width="8" x="46" y="196"/>
+      <circ-port height="8" pin="130,100" width="8" x="46" y="96"/>
+      <circ-port height="10" pin="350,340" width="10" x="255" y="95"/>
+      <circ-port height="10" pin="350,970" width="10" x="255" y="195"/>
+      <circ-port height="8" pin="130,220" width="8" x="46" y="116"/>
+      <circ-port height="8" pin="130,590" width="8" x="46" y="176"/>
+      <circ-port height="10" pin="350,710" width="10" x="255" y="155"/>
       <circ-port height="8" pin="130,340" width="8" x="46" y="136"/>
+      <circ-port height="10" pin="350,590" width="10" x="255" y="135"/>
+      <circ-port height="10" pin="350,840" width="10" x="255" y="175"/>
+      <circ-port height="8" pin="130,460" width="8" x="46" y="156"/>
       <text font-family="SansSerif" font-size="12" text-anchor="middle" x="215" y="86">mem_src2</text>
       <text font-family="SansSerif" font-size="12" text-anchor="middle" x="197" y="164">mem_memtoReg</text>
       <text font-family="SansSerif" font-size="12" text-anchor="middle" x="199" y="145">mem_memWrite</text>
@@ -2932,22 +2932,22 @@ end RTL;
       <text font-family="SansSerif" font-size="12" text-anchor="middle" x="248" y="103">mem_memtoReg</text>
       <text fill="#404040" font-family="Dialog" font-size="12" text-anchor="end" x="286" y="104"/>
       <text fill="#404040" font-family="Dialog" font-size="12" text-anchor="end" x="215" y="103"/>
-      <circ-port height="10" pin="790,270" width="10" x="305" y="155"/>
-      <circ-port height="10" pin="790,190" width="10" x="305" y="75"/>
-      <circ-port height="10" pin="790,420" width="10" x="305" y="135"/>
-      <circ-port height="10" pin="790,360" width="10" x="305" y="95"/>
-      <circ-port height="8" pin="230,40" width="8" x="46" y="56"/>
-      <circ-port height="8" pin="390,590" width="8" x="46" y="236"/>
-      <circ-port height="10" pin="790,390" width="10" x="305" y="115"/>
-      <circ-port height="10" pin="790,90" width="10" x="305" y="55"/>
-      <circ-port height="8" pin="200,210" width="8" x="46" y="96"/>
-      <circ-port height="8" pin="200,390" width="8" x="46" y="196"/>
-      <circ-port height="8" pin="200,90" width="8" x="46" y="76"/>
-      <circ-port height="8" pin="200,420" width="8" x="46" y="216"/>
-      <circ-port height="8" pin="200,300" width="8" x="46" y="136"/>
-      <circ-port height="8" pin="200,330" width="8" x="46" y="156"/>
-      <circ-port height="8" pin="200,270" width="8" x="46" y="116"/>
       <circ-port height="8" pin="200,360" width="8" x="46" y="176"/>
+      <circ-port height="10" pin="790,270" width="10" x="305" y="155"/>
+      <circ-port height="8" pin="200,270" width="8" x="46" y="116"/>
+      <circ-port height="10" pin="790,190" width="10" x="305" y="75"/>
+      <circ-port height="8" pin="200,330" width="8" x="46" y="156"/>
+      <circ-port height="10" pin="790,420" width="10" x="305" y="135"/>
+      <circ-port height="8" pin="200,300" width="8" x="46" y="136"/>
+      <circ-port height="10" pin="790,360" width="10" x="305" y="95"/>
+      <circ-port height="8" pin="200,420" width="8" x="46" y="216"/>
+      <circ-port height="8" pin="230,40" width="8" x="46" y="56"/>
+      <circ-port height="8" pin="200,90" width="8" x="46" y="76"/>
+      <circ-port height="8" pin="390,590" width="8" x="46" y="236"/>
+      <circ-port height="8" pin="200,390" width="8" x="46" y="196"/>
+      <circ-port height="10" pin="790,390" width="10" x="305" y="115"/>
+      <circ-port height="8" pin="200,210" width="8" x="46" y="96"/>
+      <circ-port height="10" pin="790,90" width="10" x="305" y="55"/>
       <text fill="#404040" font-family="Dialog" font-size="12" text-anchor="end" x="215" y="143"/>
       <text fill="#404040" font-family="Dialog" font-size="12" text-anchor="end" x="286" y="124"/>
       <text fill="#404040" font-family="Dialog" font-size="12" text-anchor="end" x="215" y="100"/>
@@ -3186,18 +3186,18 @@ end RTL;&#13;
       <text font-family="SansSerif" font-size="12" text-anchor="middle" x="242" y="64">wb_aluOut</text>
       <text fill="#404040" font-family="Dialog" font-size="12" text-anchor="end" x="275" y="105"/>
       <text fill="#404040" font-family="Dialog" font-size="12" text-anchor="end" x="196" y="144"/>
-      <circ-port height="10" pin="340,350" width="10" x="285" y="95"/>
-      <circ-port height="8" pin="120,110" width="8" x="46" y="96"/>
-      <circ-port height="10" pin="340,230" width="10" x="285" y="75"/>
-      <circ-port height="10" pin="340,470" width="10" x="285" y="115"/>
-      <circ-port height="8" pin="120,350" width="8" x="46" y="136"/>
-      <circ-port height="8" pin="120,230" width="8" x="46" y="116"/>
-      <circ-port height="10" pin="340,590" width="10" x="285" y="135"/>
-      <circ-port height="8" pin="120,590" width="8" x="46" y="176"/>
       <circ-port height="8" pin="120,470" width="8" x="46" y="156"/>
-      <circ-port height="8" pin="150,50" width="8" x="46" y="56"/>
+      <circ-port height="10" pin="340,590" width="10" x="285" y="135"/>
+      <circ-port height="8" pin="120,110" width="8" x="46" y="96"/>
       <circ-port height="10" pin="350,110" width="10" x="285" y="55"/>
+      <circ-port height="8" pin="120,350" width="8" x="46" y="136"/>
+      <circ-port height="10" pin="340,470" width="10" x="285" y="115"/>
       <circ-port height="8" pin="280,690" width="8" x="46" y="76"/>
+      <circ-port height="10" pin="340,230" width="10" x="285" y="75"/>
+      <circ-port height="8" pin="120,230" width="8" x="46" y="116"/>
+      <circ-port height="8" pin="150,50" width="8" x="46" y="56"/>
+      <circ-port height="10" pin="340,350" width="10" x="285" y="95"/>
+      <circ-port height="8" pin="120,590" width="8" x="46" y="176"/>
       <text fill="#404040" font-family="Dialog" font-size="12" text-anchor="end" x="275" y="125"/>
       <text fill="#404040" font-family="Dialog" font-size="12" text-anchor="end" x="267" y="105"/>
       <text fill="#404040" font-family="Dialog" font-size="12" text-anchor="end" x="276" y="85"/>
@@ -3445,40 +3445,41 @@ end RTL;&#13;
     <a name="circuitnamedbox" val="true"/>
     <a name="circuitvhdlpath" val=""/>
     <wire from="(640,270)" to="(1270,270)"/>
+    <wire from="(1200,650)" to="(1200,860)"/>
     <wire from="(620,420)" to="(670,420)"/>
     <wire from="(980,550)" to="(980,750)"/>
+    <wire from="(2180,310)" to="(2270,310)"/>
     <wire from="(2530,370)" to="(2540,370)"/>
     <wire from="(1630,740)" to="(2260,740)"/>
-    <wire from="(380,480)" to="(380,880)"/>
+    <wire from="(450,860)" to="(1200,860)"/>
     <wire from="(1950,250)" to="(2260,250)"/>
-    <wire from="(360,440)" to="(460,440)"/>
-    <wire from="(830,410)" to="(1000,410)"/>
+    <wire from="(910,410)" to="(910,820)"/>
     <wire from="(830,370)" to="(1000,370)"/>
     <wire from="(1630,610)" to="(1630,740)"/>
+    <wire from="(270,270)" to="(270,300)"/>
     <wire from="(2870,250)" to="(2950,250)"/>
     <wire from="(2870,290)" to="(2950,290)"/>
     <wire from="(2870,330)" to="(2950,330)"/>
-    <wire from="(370,460)" to="(460,460)"/>
+    <wire from="(440,460)" to="(440,870)"/>
+    <wire from="(1530,490)" to="(1530,800)"/>
     <wire from="(660,250)" to="(660,360)"/>
     <wire from="(990,570)" to="(990,740)"/>
     <wire from="(1290,330)" to="(1300,330)"/>
-    <wire from="(850,450)" to="(1000,450)"/>
     <wire from="(640,270)" to="(640,380)"/>
-    <wire from="(830,410)" to="(830,830)"/>
+    <wire from="(460,850)" to="(670,850)"/>
     <wire from="(1950,310)" to="(1960,310)"/>
     <wire from="(640,380)" to="(670,380)"/>
-    <wire from="(840,430)" to="(1000,430)"/>
-    <wire from="(840,430)" to="(840,810)"/>
-    <wire from="(390,500)" to="(390,870)"/>
-    <wire from="(1200,650)" to="(1200,880)"/>
-    <wire from="(380,480)" to="(460,480)"/>
+    <wire from="(1520,570)" to="(1520,820)"/>
+    <wire from="(260,300)" to="(270,300)"/>
+    <wire from="(920,430)" to="(920,810)"/>
     <wire from="(940,790)" to="(2550,790)"/>
     <wire from="(3160,290)" to="(3160,760)"/>
     <wire from="(990,350)" to="(1000,350)"/>
     <wire from="(1500,570)" to="(1520,570)"/>
     <wire from="(2530,330)" to="(2630,330)"/>
     <wire from="(2530,290)" to="(2630,290)"/>
-    <wire from="(390,500)" to="(460,500)"/>
+    <wire from="(450,480)" to="(450,860)"/>
+    <wire from="(250,250)" to="(450,250)"/>
     <wire from="(1640,630)" to="(1640,730)"/>
     <wire from="(2170,330)" to="(2270,330)"/>
     <wire from="(2170,370)" to="(2270,370)"/>
@@ -3486,15 +3487,15 @@ end RTL;&#13;
     <wire from="(2170,450)" to="(2270,450)"/>
     <wire from="(1190,550)" to="(1300,550)"/>
     <wire from="(1190,430)" to="(1300,430)"/>
-    <wire from="(390,870)" to="(640,870)"/>
     <wire from="(1190,590)" to="(1300,590)"/>
-    <wire from="(1190,390)" to="(1300,390)"/>
-    <wire from="(1190,510)" to="(1300,510)"/>
-    <wire from="(1190,470)" to="(1300,470)"/>
+    <wire from="(1220,350)" to="(1220,880)"/>
     <wire from="(1860,350)" to="(1960,350)"/>
     <wire from="(1860,390)" to="(1960,390)"/>
     <wire from="(1860,430)" to="(1960,430)"/>
     <wire from="(1860,470)" to="(1960,470)"/>
+    <wire from="(1190,390)" to="(1300,390)"/>
+    <wire from="(1190,510)" to="(1300,510)"/>
+    <wire from="(1190,470)" to="(1300,470)"/>
     <wire from="(1000,590)" to="(1000,730)"/>
     <wire from="(1290,250)" to="(1290,330)"/>
     <wire from="(1270,270)" to="(1270,350)"/>
@@ -3502,24 +3503,24 @@ end RTL;&#13;
     <wire from="(2260,740)" to="(3180,740)"/>
     <wire from="(990,740)" to="(1630,740)"/>
     <wire from="(3170,270)" to="(3170,750)"/>
-    <wire from="(640,870)" to="(1190,870)"/>
-    <wire from="(260,270)" to="(260,290)"/>
+    <wire from="(930,450)" to="(930,800)"/>
     <wire from="(960,770)" to="(2530,770)"/>
-    <wire from="(1520,570)" to="(1520,830)"/>
     <wire from="(2260,470)" to="(2270,470)"/>
-    <wire from="(850,850)" to="(1530,850)"/>
     <wire from="(1930,270)" to="(2630,270)"/>
+    <wire from="(460,500)" to="(460,850)"/>
     <wire from="(1500,590)" to="(1510,590)"/>
     <wire from="(980,750)" to="(3170,750)"/>
+    <wire from="(1210,630)" to="(1210,870)"/>
     <wire from="(430,420)" to="(460,420)"/>
-    <wire from="(1640,730)" to="(2220,730)"/>
+    <wire from="(270,270)" to="(430,270)"/>
+    <wire from="(930,800)" to="(1530,800)"/>
     <wire from="(430,270)" to="(640,270)"/>
+    <wire from="(910,410)" to="(1000,410)"/>
     <wire from="(450,250)" to="(660,250)"/>
     <wire from="(2260,470)" to="(2260,740)"/>
-    <wire from="(840,810)" to="(1510,810)"/>
-    <wire from="(2220,310)" to="(2270,310)"/>
+    <wire from="(670,850)" to="(1190,850)"/>
     <wire from="(1500,490)" to="(1530,490)"/>
-    <wire from="(1220,350)" to="(1220,900)"/>
+    <wire from="(930,450)" to="(1000,450)"/>
     <wire from="(1500,350)" to="(1650,350)"/>
     <wire from="(1500,390)" to="(1650,390)"/>
     <wire from="(1500,430)" to="(1650,430)"/>
@@ -3528,49 +3529,44 @@ end RTL;&#13;
     <wire from="(1500,510)" to="(1650,510)"/>
     <wire from="(1500,550)" to="(1650,550)"/>
     <wire from="(1190,630)" to="(1210,630)"/>
-    <wire from="(1530,490)" to="(1530,850)"/>
+    <wire from="(920,430)" to="(1000,430)"/>
     <wire from="(950,490)" to="(1000,490)"/>
     <wire from="(2540,370)" to="(2630,370)"/>
-    <wire from="(830,830)" to="(1520,830)"/>
     <wire from="(3160,250)" to="(3180,250)"/>
     <wire from="(620,400)" to="(670,400)"/>
     <wire from="(940,470)" to="(1000,470)"/>
     <wire from="(940,470)" to="(940,790)"/>
     <wire from="(450,250)" to="(450,400)"/>
     <wire from="(430,270)" to="(430,420)"/>
-    <wire from="(1210,630)" to="(1210,890)"/>
+    <wire from="(910,820)" to="(1520,820)"/>
     <wire from="(960,510)" to="(1000,510)"/>
     <wire from="(2550,350)" to="(2630,350)"/>
+    <wire from="(2170,310)" to="(2180,310)"/>
     <wire from="(830,390)" to="(1000,390)"/>
     <wire from="(3180,250)" to="(3180,740)"/>
     <wire from="(2870,270)" to="(2950,270)"/>
     <wire from="(2870,310)" to="(2950,310)"/>
-    <wire from="(850,450)" to="(850,850)"/>
     <wire from="(2550,350)" to="(2550,790)"/>
     <wire from="(1530,490)" to="(1650,490)"/>
     <wire from="(1950,250)" to="(1950,310)"/>
     <wire from="(1930,270)" to="(1930,330)"/>
-    <wire from="(360,900)" to="(1220,900)"/>
     <wire from="(980,550)" to="(1000,550)"/>
     <wire from="(1190,650)" to="(1200,650)"/>
-    <wire from="(640,440)" to="(640,870)"/>
-    <wire from="(640,440)" to="(670,440)"/>
+    <wire from="(1190,670)" to="(1190,850)"/>
     <wire from="(970,530)" to="(1000,530)"/>
     <wire from="(950,490)" to="(950,780)"/>
     <wire from="(2260,250)" to="(2630,250)"/>
-    <wire from="(240,250)" to="(450,250)"/>
-    <wire from="(2170,310)" to="(2220,310)"/>
-    <wire from="(240,290)" to="(260,290)"/>
     <wire from="(1190,350)" to="(1220,350)"/>
     <wire from="(1270,350)" to="(1300,350)"/>
     <wire from="(990,570)" to="(1000,570)"/>
     <wire from="(2530,310)" to="(2630,310)"/>
     <wire from="(660,360)" to="(670,360)"/>
     <wire from="(660,250)" to="(990,250)"/>
+    <wire from="(920,810)" to="(1510,810)"/>
     <wire from="(2170,350)" to="(2270,350)"/>
     <wire from="(2170,390)" to="(2270,390)"/>
     <wire from="(2170,430)" to="(2270,430)"/>
-    <wire from="(370,890)" to="(1210,890)"/>
+    <wire from="(1640,730)" to="(2180,730)"/>
     <wire from="(1930,330)" to="(1960,330)"/>
     <wire from="(1190,570)" to="(1300,570)"/>
     <wire from="(1190,610)" to="(1300,610)"/>
@@ -3583,33 +3579,35 @@ end RTL;&#13;
     <wire from="(1860,410)" to="(1960,410)"/>
     <wire from="(1860,490)" to="(1960,490)"/>
     <wire from="(1860,450)" to="(1960,450)"/>
-    <wire from="(2220,310)" to="(2220,730)"/>
-    <wire from="(360,440)" to="(360,900)"/>
-    <wire from="(380,880)" to="(1200,880)"/>
+    <wire from="(2180,310)" to="(2180,730)"/>
     <wire from="(960,510)" to="(960,770)"/>
     <wire from="(2530,350)" to="(2550,350)"/>
     <wire from="(2260,250)" to="(2260,290)"/>
     <wire from="(1510,590)" to="(1510,810)"/>
     <wire from="(1000,730)" to="(1640,730)"/>
-    <wire from="(260,270)" to="(430,270)"/>
+    <wire from="(670,440)" to="(670,850)"/>
     <wire from="(2260,290)" to="(2270,290)"/>
     <wire from="(3160,270)" to="(3170,270)"/>
-    <wire from="(1190,670)" to="(1190,870)"/>
     <wire from="(2530,390)" to="(2530,770)"/>
     <wire from="(990,250)" to="(1290,250)"/>
     <wire from="(970,760)" to="(3160,760)"/>
     <wire from="(1510,590)" to="(1650,590)"/>
+    <wire from="(430,440)" to="(460,440)"/>
     <wire from="(970,530)" to="(970,760)"/>
     <wire from="(1520,570)" to="(1650,570)"/>
-    <wire from="(370,460)" to="(370,890)"/>
+    <wire from="(440,460)" to="(460,460)"/>
     <wire from="(990,250)" to="(990,350)"/>
+    <wire from="(430,880)" to="(1220,880)"/>
     <wire from="(1640,630)" to="(1650,630)"/>
     <wire from="(450,400)" to="(460,400)"/>
+    <wire from="(450,480)" to="(460,480)"/>
     <wire from="(1630,610)" to="(1650,610)"/>
+    <wire from="(440,870)" to="(1210,870)"/>
     <wire from="(1500,370)" to="(1650,370)"/>
     <wire from="(1500,410)" to="(1650,410)"/>
     <wire from="(1500,450)" to="(1650,450)"/>
     <wire from="(1500,530)" to="(1650,530)"/>
+    <wire from="(430,440)" to="(430,880)"/>
     <wire from="(1290,250)" to="(1950,250)"/>
     <wire from="(1270,270)" to="(1930,270)"/>
     <comp loc="(1500,350)" name="IDEXpipe"/>
@@ -3621,9 +3619,9 @@ end RTL;&#13;
     <comp loc="(1190,350)" name="IDstage"/>
     <comp loc="(3160,250)" name="WBstage"/>
     <comp loc="(620,400)" name="IFstage"/>
-    <comp lib="0" loc="(240,250)" name="Clock"/>
-    <comp lib="0" loc="(240,290)" name="POR">
+    <comp lib="0" loc="(260,300)" name="POR">
       <a name="PorHighDuration" val="1"/>
     </comp>
+    <comp lib="0" loc="(250,250)" name="Clock"/>
   </circuit>
 </project>
