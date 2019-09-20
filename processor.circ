@@ -321,7 +321,7 @@ architecture RTL of imem is&#13;
 		variable temporal  : std_logic_vector(31 downto 0);&#13;
 		variable rom       : memoryArray := (others =&gt; (others =&gt; '0'));&#13;
 	begin&#13;
-		file_open(inputText, "C:/Users/Tasos/Desktop/diplomatiki/test1.dat", read_mode);&#13;
+		file_open(inputText, "C:/Users/Tasos/Desktop/diplomatiki/instr_memfile.dat", read_mode);&#13;
 		for index in 0 to 127 loop&#13;
 			if (endfile(inputText)) then&#13;
 				exit;&#13;

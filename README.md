@@ -1,1 +1,1 @@
-A RISC based processor implementaion using Logisim-evolution.
+A RISC based processor implementation using Logisim-evolution.
