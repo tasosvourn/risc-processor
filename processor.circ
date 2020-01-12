@@ -358,12 +358,12 @@ end TCL_Generic;
       <text fill="#404040" font-family="Dialog" font-size="12" text-anchor="start" x="64" y="64">clk</text>
       <rect height="4" stroke="none" width="10" x="180" y="58"/>
       <circ-port height="8" pin="250,1420" width="8" x="46" y="56"/>
+      <circ-port height="8" pin="100,1270" width="8" x="46" y="116"/>
+      <circ-port height="8" pin="200,920" width="8" x="46" y="76"/>
+      <circ-port height="8" pin="100,1200" width="8" x="46" y="96"/>
       <circ-port height="8" pin="250,1400" width="8" x="46" y="176"/>
       <circ-port height="8" pin="170,1380" width="8" x="46" y="156"/>
-      <circ-port height="8" pin="100,1270" width="8" x="46" y="116"/>
-      <circ-port height="8" pin="100,1200" width="8" x="46" y="96"/>
       <circ-port height="8" pin="160,1050" width="8" x="46" y="136"/>
-      <circ-port height="8" pin="200,920" width="8" x="46" y="76"/>
       <circ-port height="10" pin="1180,890" width="10" x="185" y="55"/>
       <text fill="#404040" font-family="Dialog" font-size="12" text-anchor="end" x="175" y="64">rd1</text>
       <rect height="4" stroke="none" width="10" x="180" y="78"/>
@@ -924,29 +924,29 @@ end TCL_Generic;
     <a name="clabelfont" val="SansSerif bold 16"/>
     <a name="circuitnamedbox" val="true"/>
     <a name="circuitvhdlpath" val=""/>
-    <wire from="(450,160)" to="(450,230)"/>
     <wire from="(300,450)" to="(360,450)"/>
+    <wire from="(460,270)" to="(460,340)"/>
     <wire from="(300,440)" to="(350,440)"/>
     <wire from="(320,120)" to="(370,120)"/>
-    <wire from="(460,280)" to="(460,430)"/>
-    <wire from="(440,220)" to="(440,240)"/>
-    <wire from="(440,260)" to="(440,280)"/>
     <wire from="(230,240)" to="(230,320)"/>
     <wire from="(300,430)" to="(340,430)"/>
     <wire from="(330,180)" to="(370,180)"/>
     <wire from="(330,420)" to="(370,420)"/>
-    <wire from="(420,430)" to="(460,430)"/>
-    <wire from="(450,230)" to="(480,230)"/>
-    <wire from="(450,270)" to="(480,270)"/>
+    <wire from="(450,240)" to="(490,240)"/>
+    <wire from="(450,260)" to="(490,260)"/>
+    <wire from="(440,100)" to="(470,100)"/>
     <wire from="(300,420)" to="(330,420)"/>
     <wire from="(320,120)" to="(320,410)"/>
     <wire from="(340,240)" to="(370,240)"/>
     <wire from="(300,410)" to="(320,410)"/>
     <wire from="(350,300)" to="(370,300)"/>
     <wire from="(350,440)" to="(370,440)"/>
-    <wire from="(430,340)" to="(450,340)"/>
-    <wire from="(430,160)" to="(450,160)"/>
+    <wire from="(470,220)" to="(490,220)"/>
+    <wire from="(470,280)" to="(490,280)"/>
     <wire from="(230,220)" to="(250,220)"/>
+    <wire from="(440,220)" to="(450,220)"/>
+    <wire from="(440,280)" to="(450,280)"/>
+    <wire from="(540,250)" to="(610,250)"/>
     <wire from="(360,360)" to="(370,360)"/>
     <wire from="(330,180)" to="(330,420)"/>
     <wire from="(230,230)" to="(240,230)"/>
@@ -957,38 +957,30 @@ end TCL_Generic;
     <wire from="(230,80)" to="(230,200)"/>
     <wire from="(240,260)" to="(370,260)"/>
     <wire from="(240,140)" to="(370,140)"/>
-    <wire from="(450,270)" to="(450,340)"/>
+    <wire from="(470,100)" to="(470,220)"/>
+    <wire from="(460,160)" to="(460,230)"/>
     <wire from="(240,140)" to="(240,210)"/>
+    <wire from="(420,430)" to="(470,430)"/>
     <wire from="(350,300)" to="(350,440)"/>
     <wire from="(320,410)" to="(370,410)"/>
     <wire from="(250,200)" to="(370,200)"/>
     <wire from="(230,460)" to="(280,460)"/>
+    <wire from="(470,280)" to="(470,430)"/>
+    <wire from="(450,220)" to="(450,240)"/>
+    <wire from="(450,260)" to="(450,280)"/>
     <wire from="(250,200)" to="(250,220)"/>
     <wire from="(240,230)" to="(240,260)"/>
-    <wire from="(440,240)" to="(480,240)"/>
-    <wire from="(440,260)" to="(480,260)"/>
     <wire from="(360,360)" to="(360,450)"/>
-    <wire from="(430,100)" to="(460,100)"/>
+    <wire from="(460,230)" to="(490,230)"/>
+    <wire from="(460,270)" to="(490,270)"/>
     <wire from="(340,430)" to="(370,430)"/>
-    <wire from="(460,220)" to="(480,220)"/>
-    <wire from="(460,280)" to="(480,280)"/>
+    <wire from="(440,340)" to="(460,340)"/>
+    <wire from="(440,160)" to="(460,160)"/>
     <wire from="(190,250)" to="(210,250)"/>
-    <wire from="(430,220)" to="(440,220)"/>
-    <wire from="(430,280)" to="(440,280)"/>
-    <wire from="(530,250)" to="(600,250)"/>
     <wire from="(360,450)" to="(370,450)"/>
-    <wire from="(460,100)" to="(460,220)"/>
-    <comp lib="1" loc="(430,280)" name="XOR Gate"/>
-    <comp lib="1" loc="(430,100)" name="XOR Gate"/>
     <comp lib="1" loc="(420,430)" name="OR Gate">
       <a name="inputs" val="5"/>
     </comp>
-    <comp lib="1" loc="(430,220)" name="XOR Gate"/>
-    <comp lib="1" loc="(530,250)" name="AND Gate">
-      <a name="inputs" val="6"/>
-    </comp>
-    <comp lib="1" loc="(430,340)" name="XOR Gate"/>
-    <comp lib="1" loc="(430,160)" name="XOR Gate"/>
     <comp lib="0" loc="(280,460)" name="Splitter">
       <a name="fanout" val="5"/>
       <a name="incoming" val="5"/>
@@ -1005,12 +997,20 @@ end TCL_Generic;
       <a name="width" val="5"/>
       <a name="label" val="wrReg"/>
     </comp>
-    <comp lib="0" loc="(600,250)" name="Pin">
+    <comp lib="1" loc="(540,250)" name="AND Gate">
+      <a name="inputs" val="6"/>
+    </comp>
+    <comp lib="0" loc="(610,250)" name="Pin">
       <a name="facing" val="west"/>
       <a name="output" val="true"/>
       <a name="label" val="forward"/>
       <a name="labelloc" val="east"/>
     </comp>
+    <comp lib="1" loc="(440,100)" name="XNOR Gate"/>
+    <comp lib="1" loc="(440,160)" name="XNOR Gate"/>
+    <comp lib="1" loc="(440,220)" name="XNOR Gate"/>
+    <comp lib="1" loc="(440,280)" name="XNOR Gate"/>
+    <comp lib="1" loc="(440,340)" name="XNOR Gate"/>
   </circuit>
   <circuit name="IFstage">
     <a name="circuit" val="IFstage"/>
@@ -1223,12 +1223,12 @@ end RTL;&#13;
       <text fill="#ffffff" font-family="Dialog" font-size="14" font-weight="bold" text-anchor="middle" x="130" y="243">IFIDpipe</text>
       <text font-family="SansSerif" font-size="12" text-anchor="middle" x="71" y="65">clk</text>
       <text font-family="SansSerif" font-size="12" text-anchor="middle" x="72" y="102">pcf</text>
+      <circ-port height="10" pin="420,140" width="10" x="205" y="65"/>
+      <circ-port height="8" pin="210,230" width="8" x="46" y="116"/>
+      <circ-port height="8" pin="250,60" width="8" x="46" y="56"/>
       <circ-port height="8" pin="140,300" width="8" x="46" y="136"/>
       <circ-port height="10" pin="410,270" width="10" x="205" y="85"/>
-      <circ-port height="10" pin="420,140" width="10" x="205" y="65"/>
-      <circ-port height="8" pin="250,60" width="8" x="46" y="56"/>
       <circ-port height="8" pin="180,330" width="8" x="46" y="76"/>
-      <circ-port height="8" pin="210,230" width="8" x="46" y="116"/>
       <text font-family="SansSerif" font-size="12" text-anchor="middle" x="82" y="125">if_instr</text>
       <text font-family="SansSerif" font-size="12" text-anchor="middle" x="75" y="142">stall</text>
       <text font-family="SansSerif" font-size="12" text-anchor="middle" x="78" y="83">reset</text>
@@ -1377,37 +1377,37 @@ end RTL;&#13;
       <text fill="#ffffff" font-family="Dialog" font-size="14" font-weight="bold" text-anchor="middle" x="144" y="423">IDstage</text>
       <text font-family="SansSerif" font-size="12" text-anchor="middle" x="72" y="62">clk</text>
       <text font-family="SansSerif" font-size="12" text-anchor="middle" x="81" y="103">pcSeq</text>
-      <circ-port height="8" pin="1390,1350" width="8" x="46" y="256"/>
       <text font-family="SansSerif" font-size="12" text-anchor="middle" x="83" y="124">id_instr</text>
       <text font-family="SansSerif" font-size="12" text-anchor="middle" x="78" y="144">ex_rd</text>
-      <circ-port height="10" pin="1380,720" width="10" x="235" y="175"/>
       <circ-port height="8" pin="200,60" width="8" x="46" y="56"/>
-      <circ-port height="10" pin="1380,360" width="10" x="235" y="75"/>
-      <circ-port height="10" pin="1380,760" width="10" x="235" y="195"/>
-      <circ-port height="10" pin="1380,940" width="10" x="235" y="275"/>
-      <circ-port height="10" pin="1380,630" width="10" x="235" y="135"/>
-      <circ-port height="10" pin="210,130" width="10" x="235" y="55"/>
-      <circ-port height="8" pin="210,1330" width="8" x="46" y="196"/>
-      <circ-port height="8" pin="210,1250" width="8" x="46" y="156"/>
-      <circ-port height="10" pin="1380,460" width="10" x="235" y="95"/>
-      <circ-port height="8" pin="210,360" width="8" x="46" y="96"/>
-      <circ-port height="10" pin="1390,1230" width="10" x="235" y="335"/>
-      <circ-port height="10" pin="1380,800" width="10" x="235" y="215"/>
-      <circ-port height="8" pin="210,1290" width="8" x="46" y="176"/>
-      <circ-port height="10" pin="1380,670" width="10" x="235" y="155"/>
-      <circ-port height="10" pin="1380,1040" width="10" x="235" y="315"/>
-      <circ-port height="8" pin="210,490" width="8" x="46" y="116"/>
       <circ-port height="10" pin="1380,560" width="10" x="235" y="115"/>
-      <circ-port height="10" pin="1380,890" width="10" x="235" y="255"/>
-      <circ-port height="10" pin="1390,1290" width="10" x="235" y="375"/>
-      <circ-port height="10" pin="1380,840" width="10" x="235" y="235"/>
-      <circ-port height="8" pin="210,1410" width="8" x="46" y="236"/>
       <circ-port height="8" pin="1380,1100" width="8" x="46" y="316"/>
-      <circ-port height="8" pin="210,1370" width="8" x="46" y="216"/>
+      <circ-port height="10" pin="210,130" width="10" x="235" y="55"/>
+      <circ-port height="10" pin="1380,940" width="10" x="235" y="275"/>
+      <circ-port height="10" pin="1380,840" width="10" x="235" y="235"/>
+      <circ-port height="10" pin="1390,1290" width="10" x="235" y="375"/>
+      <circ-port height="10" pin="1380,760" width="10" x="235" y="195"/>
+      <circ-port height="10" pin="1380,1040" width="10" x="235" y="315"/>
       <circ-port height="10" pin="1390,1260" width="10" x="235" y="355"/>
-      <circ-port height="8" pin="210,1220" width="8" x="46" y="136"/>
+      <circ-port height="8" pin="210,1250" width="8" x="46" y="156"/>
+      <circ-port height="10" pin="1380,360" width="10" x="235" y="75"/>
+      <circ-port height="10" pin="1380,890" width="10" x="235" y="255"/>
+      <circ-port height="8" pin="210,1410" width="8" x="46" y="236"/>
+      <circ-port height="10" pin="1380,630" width="10" x="235" y="135"/>
+      <circ-port height="8" pin="210,1290" width="8" x="46" y="176"/>
       <circ-port height="8" pin="1390,1460" width="8" x="46" y="296"/>
+      <circ-port height="8" pin="210,360" width="8" x="46" y="96"/>
+      <circ-port height="10" pin="1380,720" width="10" x="235" y="175"/>
+      <circ-port height="8" pin="210,490" width="8" x="46" y="116"/>
+      <circ-port height="8" pin="210,1370" width="8" x="46" y="216"/>
+      <circ-port height="8" pin="210,1330" width="8" x="46" y="196"/>
+      <circ-port height="10" pin="1390,1230" width="10" x="235" y="335"/>
       <circ-port height="10" pin="1380,990" width="10" x="235" y="295"/>
+      <circ-port height="10" pin="1380,800" width="10" x="235" y="215"/>
+      <circ-port height="8" pin="1390,1350" width="8" x="46" y="256"/>
+      <circ-port height="10" pin="1380,670" width="10" x="235" y="155"/>
+      <circ-port height="8" pin="210,1220" width="8" x="46" y="136"/>
+      <circ-port height="10" pin="1380,460" width="10" x="235" y="95"/>
       <text font-family="SansSerif" font-size="12" text-anchor="middle" x="96" y="164">ex_regWrite</text>
       <text font-family="SansSerif" font-size="12" text-anchor="middle" x="91" y="184">ex_isLoad</text>
       <text font-family="SansSerif" font-size="12" text-anchor="middle" x="87" y="204">mem_rd</text>
@@ -2505,12 +2505,12 @@ begin&#13;
 	-- 10 -- From Stage Wb to Stage Ex.&#13;
 	id_forwardA &lt;= "10" when ((ex_regWrite = '1')	-- Valid Instruction producing Result at Stage Ex.&#13;
 						  and (ex_rd = rs)			-- Ex Target is our Rs source.&#13;
-						  and (readsRs = '1')		-- This is not a Jump Instruction, Rs is read from.&#13;
-						  and (rs /= empty)) else	-- Not reading $zero.&#13;
+	--					  and (readsRs = '1')		-- This is not a Jump Instruction, Rs is read from.&#13;
+						  and (ex_rd /= empty)) else	-- Not reading $zero.&#13;
 				   "01" when ((mem_regWrite = '1')	-- Valid Instruction producing Result at Stage Mem.&#13;
 				   	      and (mem_rd = rs)			-- Mem Target is our Rs source.&#13;
-				   	      and (readsRs = '1')		-- This is not a Jump Instruction, Rs is read from.&#13;
-				   	      and (rs /= empty)) else	-- Not reading $zero.&#13;
+	--			   	      and (readsRs = '1')		-- This is not a Jump Instruction, Rs is read from.&#13;
+				   	      and (mem_rd /= empty)) else	-- Not reading $zero.&#13;
 				   "00";&#13;
 	-- Forwarding Control for Operand B (rt):&#13;
 	-- It is only needed for R-type Instructions and Sw.&#13;
@@ -2518,12 +2518,12 @@ begin&#13;
 	-- it is unimportant when Rt is not a source. (e.g. addi, lw) &#13;
 	id_forwardB &lt;= "10" when ((ex_regWrite = '1')	-- Valid Instruction producing Result at Stage Ex.&#13;
 		                  and (ex_rd = rt)			-- Ex target is our Rt source.&#13;
-		                  and (readsRt = '1')		-- This is not a Lui Instruction, Rt is read from.&#13;
-		                  and (rt /= empty)) else	-- Not reading $zero.&#13;
+	--	                  and (readsRt = '1')		-- This is not a Lui Instruction, Rt is read from.&#13;
+		                  and (ex_rd /= empty)) else	-- Not reading $zero.&#13;
 				   "01" when ((mem_regWrite = '1')	-- Valid Instruction producing Result at Stage Mem.&#13;
 				   	      and (mem_rd = rt)			-- Mem Target is our Rt source.&#13;
-				   	      and (readsRt = '1')		-- This is not a Lui Instruction, Rt is read from.&#13;
-				   	      and (rt /= empty)) else	-- Not reading $zero.&#13;
+	--			   	      and (readsRt = '1')		-- This is not a Lui Instruction, Rt is read from.&#13;
+				   	      and (mem_rd /= empty)) else	-- Not reading $zero.&#13;
 				   "00";&#13;
 	-- Forwarding Logic to Equality Comparator of Stage ID (Input A)&#13;
 	id_eqFwdA &lt;= '1' when ((rs = mem_rd)              -- Mem Target is our Rs source.&#13;
@@ -2774,34 +2774,34 @@ end RTL;&#13;
       <text font-family="SansSerif" font-size="12" text-anchor="middle" x="73" y="63">clk</text>
       <rect height="3" stroke="none" width="10" x="50" y="79"/>
       <text font-family="SansSerif" font-size="12" text-anchor="middle" x="77" y="83">reset</text>
-      <circ-port height="8" pin="130,710" width="8" x="46" y="196"/>
-      <circ-port height="10" pin="300,110" width="10" x="245" y="75"/>
-      <circ-port height="8" pin="150,50" width="8" x="46" y="56"/>
-      <circ-port height="8" pin="130,950" width="8" x="46" y="236"/>
-      <circ-port height="8" pin="130,830" width="8" x="46" y="216"/>
-      <circ-port height="8" pin="260,1640" width="8" x="46" y="76"/>
-      <circ-port height="10" pin="300,1430" width="10" x="245" y="295"/>
-      <circ-port height="10" pin="300,710" width="10" x="245" y="175"/>
-      <circ-port height="10" pin="300,230" width="10" x="245" y="95"/>
-      <circ-port height="8" pin="130,590" width="8" x="46" y="176"/>
-      <circ-port height="10" pin="300,950" width="10" x="245" y="215"/>
-      <circ-port height="10" pin="300,830" width="10" x="245" y="195"/>
-      <circ-port height="8" pin="130,1550" width="8" x="46" y="336"/>
-      <circ-port height="10" pin="300,1550" width="10" x="245" y="315"/>
-      <circ-port height="8" pin="130,110" width="8" x="46" y="96"/>
       <circ-port height="10" pin="300,1310" width="10" x="245" y="275"/>
-      <circ-port height="10" pin="300,1190" width="10" x="245" y="255"/>
-      <circ-port height="10" pin="300,1070" width="10" x="245" y="235"/>
-      <circ-port height="8" pin="130,1190" width="8" x="46" y="276"/>
-      <circ-port height="8" pin="130,230" width="8" x="46" y="116"/>
-      <circ-port height="10" pin="300,350" width="10" x="245" y="115"/>
-      <circ-port height="8" pin="130,1070" width="8" x="46" y="256"/>
-      <circ-port height="10" pin="300,590" width="10" x="245" y="155"/>
-      <circ-port height="8" pin="130,470" width="8" x="46" y="156"/>
       <circ-port height="8" pin="130,1430" width="8" x="46" y="316"/>
-      <circ-port height="10" pin="300,470" width="10" x="245" y="135"/>
+      <circ-port height="10" pin="300,230" width="10" x="245" y="95"/>
+      <circ-port height="10" pin="300,1430" width="10" x="245" y="295"/>
+      <circ-port height="10" pin="300,590" width="10" x="245" y="155"/>
+      <circ-port height="10" pin="300,1070" width="10" x="245" y="235"/>
+      <circ-port height="10" pin="300,110" width="10" x="245" y="75"/>
+      <circ-port height="10" pin="300,1550" width="10" x="245" y="315"/>
       <circ-port height="8" pin="130,1310" width="8" x="46" y="296"/>
+      <circ-port height="10" pin="300,950" width="10" x="245" y="215"/>
+      <circ-port height="8" pin="130,830" width="8" x="46" y="216"/>
+      <circ-port height="10" pin="300,350" width="10" x="245" y="115"/>
+      <circ-port height="8" pin="130,230" width="8" x="46" y="116"/>
+      <circ-port height="8" pin="130,950" width="8" x="46" y="236"/>
+      <circ-port height="10" pin="300,830" width="10" x="245" y="195"/>
       <circ-port height="8" pin="130,350" width="8" x="46" y="136"/>
+      <circ-port height="8" pin="130,1550" width="8" x="46" y="336"/>
+      <circ-port height="8" pin="150,50" width="8" x="46" y="56"/>
+      <circ-port height="8" pin="130,1190" width="8" x="46" y="276"/>
+      <circ-port height="8" pin="130,1070" width="8" x="46" y="256"/>
+      <circ-port height="8" pin="260,1640" width="8" x="46" y="76"/>
+      <circ-port height="8" pin="130,590" width="8" x="46" y="176"/>
+      <circ-port height="10" pin="300,470" width="10" x="245" y="135"/>
+      <circ-port height="8" pin="130,110" width="8" x="46" y="96"/>
+      <circ-port height="8" pin="130,710" width="8" x="46" y="196"/>
+      <circ-port height="10" pin="300,1190" width="10" x="245" y="255"/>
+      <circ-port height="8" pin="130,470" width="8" x="46" y="156"/>
+      <circ-port height="10" pin="300,710" width="10" x="245" y="175"/>
       <text font-family="SansSerif" font-size="12" text-anchor="middle" x="217" y="303">ex_rd</text>
       <text font-family="SansSerif" font-size="12" text-anchor="middle" x="213" y="104">ex_rdB</text>
       <text fill="#404040" font-family="Dialog" font-size="12" text-anchor="end" x="229" y="304"/>
@@ -2833,19 +2833,19 @@ end RTL;&#13;
     </appear>
     <wire from="(200,1010)" to="(260,1010)"/>
     <wire from="(200,650)" to="(260,650)"/>
-    <wire from="(200,770)" to="(260,770)"/>
-    <wire from="(200,890)" to="(260,890)"/>
     <wire from="(200,1130)" to="(260,1130)"/>
     <wire from="(200,1250)" to="(260,1250)"/>
     <wire from="(200,1370)" to="(260,1370)"/>
     <wire from="(200,1610)" to="(260,1610)"/>
+    <wire from="(200,770)" to="(260,770)"/>
+    <wire from="(200,890)" to="(260,890)"/>
     <wire from="(170,1190)" to="(180,1190)"/>
-    <wire from="(260,650)" to="(260,770)"/>
-    <wire from="(260,770)" to="(260,890)"/>
-    <wire from="(260,890)" to="(260,1010)"/>
     <wire from="(260,1010)" to="(260,1130)"/>
     <wire from="(260,1130)" to="(260,1250)"/>
     <wire from="(260,1250)" to="(260,1370)"/>
+    <wire from="(260,650)" to="(260,770)"/>
+    <wire from="(260,770)" to="(260,890)"/>
+    <wire from="(260,890)" to="(260,1010)"/>
     <wire from="(260,1370)" to="(260,1500)"/>
     <wire from="(200,1500)" to="(260,1500)"/>
     <wire from="(200,540)" to="(260,540)"/>
@@ -2866,22 +2866,22 @@ end RTL;&#13;
     <wire from="(130,830)" to="(170,830)"/>
     <wire from="(130,950)" to="(170,950)"/>
     <wire from="(130,1190)" to="(170,1190)"/>
-    <wire from="(130,1070)" to="(170,1070)"/>
     <wire from="(130,1310)" to="(170,1310)"/>
     <wire from="(130,1430)" to="(170,1430)"/>
     <wire from="(130,1550)" to="(170,1550)"/>
     <wire from="(260,1610)" to="(260,1640)"/>
+    <wire from="(130,1070)" to="(170,1070)"/>
     <wire from="(150,50)" to="(150,150)"/>
     <wire from="(260,540)" to="(260,650)"/>
     <wire from="(260,1500)" to="(260,1610)"/>
+    <wire from="(150,870)" to="(170,870)"/>
     <wire from="(150,990)" to="(170,990)"/>
     <wire from="(150,630)" to="(170,630)"/>
+    <wire from="(150,750)" to="(170,750)"/>
     <wire from="(150,1470)" to="(170,1470)"/>
     <wire from="(150,1350)" to="(170,1350)"/>
     <wire from="(150,1230)" to="(170,1230)"/>
     <wire from="(150,1110)" to="(170,1110)"/>
-    <wire from="(150,870)" to="(170,870)"/>
-    <wire from="(150,750)" to="(170,750)"/>
     <wire from="(150,510)" to="(170,510)"/>
     <wire from="(150,390)" to="(170,390)"/>
     <wire from="(150,270)" to="(170,270)"/>
@@ -2892,17 +2892,17 @@ end RTL;&#13;
     <wire from="(230,350)" to="(300,350)"/>
     <wire from="(230,470)" to="(300,470)"/>
     <wire from="(230,590)" to="(300,590)"/>
+    <wire from="(230,950)" to="(300,950)"/>
     <wire from="(230,710)" to="(300,710)"/>
     <wire from="(230,830)" to="(300,830)"/>
-    <wire from="(230,950)" to="(300,950)"/>
     <wire from="(150,1110)" to="(150,1230)"/>
     <wire from="(150,1470)" to="(150,1590)"/>
     <wire from="(150,1350)" to="(150,1470)"/>
     <wire from="(150,1230)" to="(150,1350)"/>
     <wire from="(150,990)" to="(150,1110)"/>
     <wire from="(150,870)" to="(150,990)"/>
-    <wire from="(150,750)" to="(150,870)"/>
     <wire from="(150,630)" to="(150,750)"/>
+    <wire from="(150,750)" to="(150,870)"/>
     <wire from="(150,510)" to="(150,630)"/>
     <wire from="(150,390)" to="(150,510)"/>
     <wire from="(150,270)" to="(150,390)"/>
@@ -2938,11 +2938,6 @@ end RTL;&#13;
     <comp lib="4" loc="(170,560)" name="Register">
       <a name="width" val="1"/>
       <a name="label" val="aluSrc"/>
-      <a name="showInTab" val="true"/>
-    </comp>
-    <comp lib="4" loc="(170,680)" name="Register">
-      <a name="width" val="2"/>
-      <a name="label" val="forwardA"/>
       <a name="showInTab" val="true"/>
     </comp>
     <comp lib="4" loc="(170,920)" name="Register">
@@ -2983,11 +2978,6 @@ end RTL;&#13;
       <a name="width" val="3"/>
     </comp>
     <comp lib="0" loc="(130,590)" name="Pin"/>
-    <comp lib="4" loc="(170,800)" name="Register">
-      <a name="width" val="2"/>
-      <a name="label" val="forwardB"/>
-      <a name="showInTab" val="true"/>
-    </comp>
     <comp lib="0" loc="(130,710)" name="Pin">
       <a name="width" val="2"/>
     </comp>
@@ -3007,8 +2997,6 @@ end RTL;&#13;
     <comp lib="0" loc="(170,370)" name="Constant"/>
     <comp lib="0" loc="(170,490)" name="Constant"/>
     <comp lib="0" loc="(170,610)" name="Constant"/>
-    <comp lib="0" loc="(170,730)" name="Constant"/>
-    <comp lib="0" loc="(170,850)" name="Constant"/>
     <comp lib="0" loc="(170,970)" name="Constant"/>
     <comp lib="0" loc="(170,1090)" name="Constant"/>
     <comp lib="0" loc="(170,1210)" name="Constant"/>
@@ -3098,6 +3086,16 @@ end RTL;&#13;
     <comp lib="0" loc="(260,1640)" name="Pin">
       <a name="facing" val="north"/>
     </comp>
+    <comp lib="4" loc="(170,680)" name="Register">
+      <a name="width" val="2"/>
+      <a name="showInTab" val="true"/>
+    </comp>
+    <comp lib="4" loc="(170,800)" name="Register">
+      <a name="width" val="2"/>
+      <a name="showInTab" val="true"/>
+    </comp>
+    <comp lib="0" loc="(170,730)" name="Constant"/>
+    <comp lib="0" loc="(170,850)" name="Constant"/>
   </circuit>
   <circuit name="EXstage">
     <a name="circuit" val="EXstage"/>
@@ -3185,28 +3183,28 @@ end RTL;&#13;
       <text font-family="SansSerif" font-size="12" text-anchor="start" x="61" y="263">ex_memtoReg</text>
       <text fill="#404040" font-family="Dialog" font-size="12" text-anchor="start" x="97" y="102"/>
       <circ-port height="8" pin="250,380" width="8" x="46" y="136"/>
-      <circ-port height="10" pin="900,150" width="10" x="255" y="55"/>
-      <circ-port height="10" pin="900,470" width="10" x="255" y="95"/>
-      <circ-port height="10" pin="900,620" width="10" x="255" y="195"/>
-      <circ-port height="8" pin="250,530" width="8" x="46" y="236"/>
-      <circ-port height="8" pin="450,650" width="8" x="46" y="336"/>
-      <circ-port height="8" pin="250,560" width="8" x="46" y="256"/>
-      <circ-port height="8" pin="250,410" width="8" x="46" y="156"/>
-      <circ-port height="10" pin="900,560" width="10" x="255" y="155"/>
-      <circ-port height="10" pin="900,530" width="10" x="255" y="135"/>
-      <circ-port height="8" pin="250,350" width="8" x="46" y="116"/>
-      <circ-port height="8" pin="250,500" width="8" x="46" y="216"/>
-      <circ-port height="10" pin="900,300" width="10" x="255" y="75"/>
-      <circ-port height="8" pin="250,590" width="8" x="46" y="276"/>
-      <circ-port height="8" pin="250,200" width="8" x="46" y="76"/>
-      <circ-port height="8" pin="250,110" width="8" x="46" y="56"/>
       <circ-port height="10" pin="900,590" width="10" x="255" y="175"/>
-      <circ-port height="8" pin="250,290" width="8" x="46" y="96"/>
-      <circ-port height="8" pin="250,620" width="8" x="46" y="296"/>
+      <circ-port height="8" pin="250,590" width="8" x="46" y="276"/>
+      <circ-port height="10" pin="900,620" width="10" x="255" y="195"/>
       <circ-port height="8" pin="360,650" width="8" x="46" y="316"/>
-      <circ-port height="8" pin="250,470" width="8" x="46" y="196"/>
-      <circ-port height="8" pin="250,440" width="8" x="46" y="176"/>
+      <circ-port height="8" pin="250,350" width="8" x="46" y="116"/>
+      <circ-port height="8" pin="250,560" width="8" x="46" y="256"/>
       <circ-port height="10" pin="900,500" width="10" x="255" y="115"/>
+      <circ-port height="8" pin="250,410" width="8" x="46" y="156"/>
+      <circ-port height="10" pin="900,530" width="10" x="255" y="135"/>
+      <circ-port height="8" pin="250,470" width="8" x="46" y="196"/>
+      <circ-port height="8" pin="250,530" width="8" x="46" y="236"/>
+      <circ-port height="10" pin="900,300" width="10" x="255" y="75"/>
+      <circ-port height="8" pin="250,290" width="8" x="46" y="96"/>
+      <circ-port height="10" pin="900,150" width="10" x="255" y="55"/>
+      <circ-port height="8" pin="250,110" width="8" x="46" y="56"/>
+      <circ-port height="8" pin="250,200" width="8" x="46" y="76"/>
+      <circ-port height="10" pin="900,470" width="10" x="255" y="95"/>
+      <circ-port height="8" pin="250,620" width="8" x="46" y="296"/>
+      <circ-port height="8" pin="250,500" width="8" x="46" y="216"/>
+      <circ-port height="8" pin="450,650" width="8" x="46" y="336"/>
+      <circ-port height="8" pin="250,440" width="8" x="46" y="176"/>
+      <circ-port height="10" pin="900,560" width="10" x="255" y="155"/>
       <text fill="#404040" font-family="Dialog" font-size="12" text-anchor="start" x="97" y="182"/>
       <text fill="#404040" font-family="Dialog" font-size="12" text-anchor="start" x="61" y="323"/>
       <text fill="#404040" font-family="Dialog" font-size="12" text-anchor="start" x="97" y="142"/>
@@ -3495,24 +3493,24 @@ end RTL;
       <text font-family="SansSerif" font-size="12" text-anchor="middle" x="90" y="104">ex_aluOut</text>
       <text font-family="SansSerif" font-size="12" text-anchor="middle" x="101" y="203">ex_memtoReg</text>
       <text font-family="SansSerif" font-size="12" text-anchor="middle" x="71" y="63">clk</text>
-      <circ-port height="8" pin="130,220" width="8" x="46" y="116"/>
-      <circ-port height="8" pin="130,590" width="8" x="46" y="176"/>
-      <circ-port height="8" pin="290,1050" width="8" x="46" y="76"/>
-      <circ-port height="10" pin="350,970" width="10" x="255" y="195"/>
-      <circ-port height="10" pin="350,710" width="10" x="255" y="155"/>
-      <circ-port height="8" pin="130,970" width="8" x="46" y="236"/>
-      <circ-port height="10" pin="350,340" width="10" x="255" y="95"/>
-      <circ-port height="8" pin="130,340" width="8" x="46" y="136"/>
-      <circ-port height="10" pin="350,460" width="10" x="255" y="115"/>
-      <circ-port height="8" pin="130,100" width="8" x="46" y="96"/>
-      <circ-port height="10" pin="350,590" width="10" x="255" y="135"/>
-      <circ-port height="10" pin="360,100" width="10" x="255" y="55"/>
-      <circ-port height="8" pin="130,710" width="8" x="46" y="196"/>
-      <circ-port height="10" pin="350,840" width="10" x="255" y="175"/>
-      <circ-port height="8" pin="130,840" width="8" x="46" y="216"/>
       <circ-port height="10" pin="350,220" width="10" x="255" y="75"/>
+      <circ-port height="10" pin="350,710" width="10" x="255" y="155"/>
+      <circ-port height="10" pin="350,590" width="10" x="255" y="135"/>
+      <circ-port height="8" pin="130,100" width="8" x="46" y="96"/>
+      <circ-port height="8" pin="130,970" width="8" x="46" y="236"/>
+      <circ-port height="8" pin="130,840" width="8" x="46" y="216"/>
+      <circ-port height="8" pin="130,220" width="8" x="46" y="116"/>
       <circ-port height="8" pin="130,460" width="8" x="46" y="156"/>
+      <circ-port height="10" pin="350,970" width="10" x="255" y="195"/>
+      <circ-port height="10" pin="360,100" width="10" x="255" y="55"/>
+      <circ-port height="10" pin="350,460" width="10" x="255" y="115"/>
+      <circ-port height="10" pin="350,340" width="10" x="255" y="95"/>
+      <circ-port height="10" pin="350,840" width="10" x="255" y="175"/>
+      <circ-port height="8" pin="130,590" width="8" x="46" y="176"/>
       <circ-port height="8" pin="160,40" width="8" x="46" y="56"/>
+      <circ-port height="8" pin="290,1050" width="8" x="46" y="76"/>
+      <circ-port height="8" pin="130,710" width="8" x="46" y="196"/>
+      <circ-port height="8" pin="130,340" width="8" x="46" y="136"/>
       <text font-family="SansSerif" font-size="12" text-anchor="middle" x="215" y="86">mem_src2</text>
       <text font-family="SansSerif" font-size="12" text-anchor="middle" x="197" y="164">mem_memtoReg</text>
       <text font-family="SansSerif" font-size="12" text-anchor="middle" x="199" y="145">mem_memWrite</text>
@@ -3777,22 +3775,22 @@ end RTL;
       <text font-family="SansSerif" font-size="12" text-anchor="middle" x="248" y="103">mem_memtoReg</text>
       <text fill="#404040" font-family="Dialog" font-size="12" text-anchor="end" x="286" y="104"/>
       <text fill="#404040" font-family="Dialog" font-size="12" text-anchor="end" x="215" y="103"/>
-      <circ-port height="8" pin="200,360" width="8" x="46" y="176"/>
-      <circ-port height="10" pin="790,270" width="10" x="305" y="155"/>
-      <circ-port height="8" pin="200,270" width="8" x="46" y="116"/>
-      <circ-port height="10" pin="790,190" width="10" x="305" y="75"/>
-      <circ-port height="8" pin="200,330" width="8" x="46" y="156"/>
-      <circ-port height="10" pin="790,420" width="10" x="305" y="135"/>
-      <circ-port height="8" pin="200,300" width="8" x="46" y="136"/>
-      <circ-port height="10" pin="790,360" width="10" x="305" y="95"/>
-      <circ-port height="8" pin="200,420" width="8" x="46" y="216"/>
-      <circ-port height="8" pin="230,40" width="8" x="46" y="56"/>
-      <circ-port height="8" pin="200,90" width="8" x="46" y="76"/>
-      <circ-port height="8" pin="390,590" width="8" x="46" y="236"/>
-      <circ-port height="8" pin="200,390" width="8" x="46" y="196"/>
-      <circ-port height="10" pin="790,390" width="10" x="305" y="115"/>
-      <circ-port height="8" pin="200,210" width="8" x="46" y="96"/>
       <circ-port height="10" pin="790,90" width="10" x="305" y="55"/>
+      <circ-port height="8" pin="200,360" width="8" x="46" y="176"/>
+      <circ-port height="8" pin="200,210" width="8" x="46" y="96"/>
+      <circ-port height="10" pin="790,270" width="10" x="305" y="155"/>
+      <circ-port height="10" pin="790,390" width="10" x="305" y="115"/>
+      <circ-port height="8" pin="200,270" width="8" x="46" y="116"/>
+      <circ-port height="8" pin="200,390" width="8" x="46" y="196"/>
+      <circ-port height="10" pin="790,190" width="10" x="305" y="75"/>
+      <circ-port height="8" pin="390,590" width="8" x="46" y="236"/>
+      <circ-port height="8" pin="200,330" width="8" x="46" y="156"/>
+      <circ-port height="8" pin="200,90" width="8" x="46" y="76"/>
+      <circ-port height="10" pin="790,420" width="10" x="305" y="135"/>
+      <circ-port height="8" pin="230,40" width="8" x="46" y="56"/>
+      <circ-port height="8" pin="200,300" width="8" x="46" y="136"/>
+      <circ-port height="8" pin="200,420" width="8" x="46" y="216"/>
+      <circ-port height="10" pin="790,360" width="10" x="305" y="95"/>
       <text fill="#404040" font-family="Dialog" font-size="12" text-anchor="end" x="215" y="143"/>
       <text fill="#404040" font-family="Dialog" font-size="12" text-anchor="end" x="286" y="124"/>
       <text fill="#404040" font-family="Dialog" font-size="12" text-anchor="end" x="215" y="100"/>
@@ -4032,18 +4030,18 @@ end RTL;&#13;
       <text font-family="SansSerif" font-size="12" text-anchor="middle" x="242" y="64">wb_aluOut</text>
       <text fill="#404040" font-family="Dialog" font-size="12" text-anchor="end" x="275" y="105"/>
       <text fill="#404040" font-family="Dialog" font-size="12" text-anchor="end" x="196" y="144"/>
-      <circ-port height="8" pin="120,470" width="8" x="46" y="156"/>
-      <circ-port height="10" pin="340,590" width="10" x="285" y="135"/>
-      <circ-port height="8" pin="120,110" width="8" x="46" y="96"/>
-      <circ-port height="10" pin="350,110" width="10" x="285" y="55"/>
-      <circ-port height="8" pin="120,350" width="8" x="46" y="136"/>
-      <circ-port height="10" pin="340,470" width="10" x="285" y="115"/>
-      <circ-port height="8" pin="280,690" width="8" x="46" y="76"/>
-      <circ-port height="10" pin="340,230" width="10" x="285" y="75"/>
       <circ-port height="8" pin="120,230" width="8" x="46" y="116"/>
-      <circ-port height="8" pin="150,50" width="8" x="46" y="56"/>
+      <circ-port height="8" pin="280,690" width="8" x="46" y="76"/>
+      <circ-port height="10" pin="340,590" width="10" x="285" y="135"/>
       <circ-port height="10" pin="340,350" width="10" x="285" y="95"/>
+      <circ-port height="8" pin="120,350" width="8" x="46" y="136"/>
+      <circ-port height="10" pin="350,110" width="10" x="285" y="55"/>
       <circ-port height="8" pin="120,590" width="8" x="46" y="176"/>
+      <circ-port height="8" pin="120,110" width="8" x="46" y="96"/>
+      <circ-port height="10" pin="340,470" width="10" x="285" y="115"/>
+      <circ-port height="8" pin="150,50" width="8" x="46" y="56"/>
+      <circ-port height="8" pin="120,470" width="8" x="46" y="156"/>
+      <circ-port height="10" pin="340,230" width="10" x="285" y="75"/>
       <text fill="#404040" font-family="Dialog" font-size="12" text-anchor="end" x="275" y="125"/>
       <text fill="#404040" font-family="Dialog" font-size="12" text-anchor="end" x="267" y="105"/>
       <text fill="#404040" font-family="Dialog" font-size="12" text-anchor="end" x="276" y="85"/>
